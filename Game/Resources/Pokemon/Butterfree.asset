@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77586b9c49eccb243ad5d4fb64303e2c, type: 3}
+  m_Name: Butterfree
+  m_EditorClassIdentifier: 
+  name: Butterfree
+  description: "\tButterfree has a superior ability to search for delicious honey
+    from flowers. It can even search out, extract, and carry honey from flowers that
+    are blooming over six miles from its nest."
+  frontSprite: {fileID: 629615841, guid: e0d240745e0241d4e9423fc2e8eee62a, type: 3}
+  backSprite: {fileID: 351960630, guid: 6e1a351c3dbed914394e24f9ba233014, type: 3}
+  type1: 0
+  type2: 0
+  maxHP: 60
+  attack: 45
+  defense: 50
+  spAttack: 80
+  spDefense: 80
+  speed: 70
+  LearnableMove:
+  - moveBase: {fileID: 11400000, guid: 7cc925815635aca44ad9158a9964ee85, type: 2}
+    level: 13
+  - moveBase: {fileID: 11400000, guid: 0a1f5d8d6e5fc7643b4917184a50656d, type: 2}
+    level: 14
+  - moveBase: {fileID: 11400000, guid: 9de9b0f2fa7e9ef4b8f812da0ab14618, type: 2}
+    level: 15
+  - moveBase: {fileID: 11400000, guid: 5d27d8d96ced1a44a93e4f6f965dac35, type: 2}
+    level: 15
