@@ -2,6 +2,7 @@ using System.Timers;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 [System.Serializable]
 public class Pokemon
@@ -21,6 +22,7 @@ public class Pokemon
     public int HP{get; set;}
 
     public List<Move> Moves {get; set;}
+    public Move CurrentMove {get; set;}
     public Dictionary<Stat, int> Stats {get; private set;}
 
     public Dictionary<Stat, int> StatBoosts {get; private set;}
@@ -206,8 +208,11 @@ public class Pokemon
     public Move GetRandomMove()
     {
         //*****build ai*****
-        int r = Random.Range(0, Moves.Count);
-        return Moves[r];
+
+        var movesWithPP = Moves.Where(x => x.PP > 0).ToList();
+
+        int r = Random.Range(0, movesWithPP.Count);
+        return movesWithPP[r];
     }
     public bool OnBeforeMove()
     {

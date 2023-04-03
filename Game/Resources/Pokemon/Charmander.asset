@@ -17,7 +17,7 @@ MonoBehaviour:
     emotions. The flame wavers when Charmander is enjoying itself. If the Pok\xE9mon
     becomes enraged, the flame burns fiercely."
   frontSprite: {fileID: 239636005, guid: e0d240745e0241d4e9423fc2e8eee62a, type: 3}
-  backSprite: {fileID: 21300000, guid: ed8e1d9976a1fd94d961840d8f6e7764, type: 3}
+  backSprite: {fileID: -960007434, guid: 6e1a351c3dbed914394e24f9ba233014, type: 3}
   type1: 2
   type2: 0
   maxHP: 39

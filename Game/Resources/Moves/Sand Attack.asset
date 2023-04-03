@@ -12,15 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f151016a5271a99499f3f917395e7685, type: 3}
   m_Name: Sand Attack
   m_EditorClassIdentifier: 
-  name: Growl
+  name: Sand Attack
   description: The user growls in a cute way, making the foe lower its Attack. stat.
   type: 1
   power: 0
   accuracy: 100
+  alwaysHits: 0
   pp: 40
+  priority: 0
   category: 2
   effects:
     boosts:
-    - stat: 0
+    - stat: 5
       boost: -1
+    status: 0
+    volatileStatus: 0
+  secondaries: []
   target: 0

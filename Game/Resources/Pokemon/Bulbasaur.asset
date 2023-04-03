@@ -16,7 +16,7 @@ MonoBehaviour:
   description: The seed on its back is filled with nutrients. The seed grows steadily
     larger as its body grows.
   frontSprite: {fileID: -652954740, guid: e0d240745e0241d4e9423fc2e8eee62a, type: 3}
-  backSprite: {fileID: 21300000, guid: aacaae602a38f884ab9e02e43de3736d, type: 3}
+  backSprite: {fileID: -1589237361, guid: 6e1a351c3dbed914394e24f9ba233014, type: 3}
   type1: 5
   type2: 8
   maxHP: 45
@@ -28,7 +28,7 @@ MonoBehaviour:
   LearnableMove:
   - moveBase: {fileID: 11400000, guid: 7e8507ef486e86247a982a0f784b1e38, type: 2}
     level: 1
-  - moveBase: {fileID: 11400000, guid: 0a1f5d8d6e5fc7643b4917184a50656d, type: 2}
+  - moveBase: {fileID: 11400000, guid: fecd23324ea47694bbeadd70a81e5f64, type: 2}
     level: 4
   - moveBase: {fileID: 11400000, guid: 4f9d9f4b5db272041bd9f88280a39495, type: 2}
     level: 9

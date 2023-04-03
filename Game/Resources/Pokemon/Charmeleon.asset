@@ -17,7 +17,7 @@ MonoBehaviour:
     it encounters a strong foe, it turns aggressive. In this excited state, the flame
     at the tip of its tail flares with a bluish white color.\r"
   frontSprite: {fileID: -817291469, guid: e0d240745e0241d4e9423fc2e8eee62a, type: 3}
-  backSprite: {fileID: 21300000, guid: ade6afd9cbd5c1740bf6046d9a18b97d, type: 3}
+  backSprite: {fileID: 56413002, guid: 6e1a351c3dbed914394e24f9ba233014, type: 3}
   type1: 2
   type2: 0
   maxHP: 58
@@ -27,7 +27,7 @@ MonoBehaviour:
   spDefense: 65
   speed: 80
   LearnableMove:
-  - moveBase: {fileID: 11400000, guid: 0a1f5d8d6e5fc7643b4917184a50656d, type: 2}
+  - moveBase: {fileID: 11400000, guid: 6911ed7990418db40adac68fc5e700fb, type: 2}
     level: 1
   - moveBase: {fileID: 11400000, guid: 5d27d8d96ced1a44a93e4f6f965dac35, type: 2}
     level: 1

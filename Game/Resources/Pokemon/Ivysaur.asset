@@ -18,7 +18,7 @@ MonoBehaviour:
     lying in the sunlight, it's a sign that the bud will bloom into a large flower
     soon.\r"
   frontSprite: {fileID: -957394138, guid: e0d240745e0241d4e9423fc2e8eee62a, type: 3}
-  backSprite: {fileID: 21300000, guid: 653a6fe1d97188644a3747cd5e674bc4, type: 3}
+  backSprite: {fileID: 1472828286, guid: 6e1a351c3dbed914394e24f9ba233014, type: 3}
   type1: 5
   type2: 8
   maxHP: 60
