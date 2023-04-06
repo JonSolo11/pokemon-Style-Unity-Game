@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77586b9c49eccb243ad5d4fb64303e2c, type: 3}
+  m_Name: Venomoth
+  m_EditorClassIdentifier: 
+  pokemonName: Venomoth
+  description: The dustlike scales covering its wings are color-coded to indicate
+    the kinds of poison it has.
+  frontSprite: {fileID: 21300000, guid: 0a0095cd5e72a4843b87a05fe601885b, type: 3}
+  backSprite: {fileID: 21300000, guid: 5cc1fab55563e3a46b1a6c02297be3c9, type: 3}
+  type1: 12
+  type2: 8
+  maxHP: 70
+  attack: 65
+  defense: 60
+  spAttack: 90
+  spDefense: 75
+  speed: 90
+  LearnableMove:
+  - moveBase: {fileID: 11400000, guid: e247ef52c58d9d14c9e8b56ceddc4071, type: 2}
+    level: 31
+  - moveBase: {fileID: 11400000, guid: a1e2587217b91a841b27d37ca791c92f, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 3e21c656416b7284ca04ef9477f7acd1, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 0bf41781e15dc9f48929b860466c1e5e, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 1239021ea49bd8644a510f29684ad454, type: 2}
+    level: 38
+  - moveBase: {fileID: 11400000, guid: e09c1e539e810fd4199752a31b8305b7, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 7ede8559d1fca364694a031c051e729e, type: 2}
+    level: 30
+  - moveBase: {fileID: 11400000, guid: 4c99e7af04b316840a413ace9f6c49ab, type: 2}
+    level: 43
+  - moveBase: {fileID: 11400000, guid: 2b625999442f1644c98f10e475e41e3d, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 17ffa946d70b1c24b99117c9611aa7f6, type: 2}
+    level: 50
+  - moveBase: {fileID: 11400000, guid: 1b9c735f59d4d1947a74d01e807244e0, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 8ffde40b1b4d6da4288a4acf7e97f09e, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 306deac5d08cf354aa112802ffa4ddb5, type: 2}
+    level: 1

@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77586b9c49eccb243ad5d4fb64303e2c, type: 3}
+  m_Name: Ninetales
+  m_EditorClassIdentifier: 
+  pokemonName: Ninetales
+  description: "Very smart and very vengeful. Grabbing one of\fits many tails could
+    result in a 1000-year curse."
+  frontSprite: {fileID: 21300000, guid: ea1751283c3de444d954afd646aaef0a, type: 3}
+  backSprite: {fileID: 21300000, guid: 05b7fe9914a989649b73677a95a3c0e5, type: 3}
+  type1: 2
+  type2: 0
+  maxHP: 73
+  attack: 76
+  defense: 75
+  spAttack: 81
+  spDefense: 100
+  speed: 100
+  LearnableMove:
+  - moveBase: {fileID: 11400000, guid: a1e2587217b91a841b27d37ca791c92f, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 920f56fdfa577e848b38338dc85b498f, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: beaf6ef3930a796439fa7562376613b4, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 0bf41781e15dc9f48929b860466c1e5e, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: e1f8378a95a0ead45a645ab878dda05e, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 9783b2e8db314fc45a01797a6f400b11, type: 2}
+    level: 43
+  - moveBase: {fileID: 11400000, guid: ee72c1e152711d147a98dd92efdc2384, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: d681c84c7bcb6b1418d94c90aa19c68d, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 07abc203bcf2de84c895ca631654c159, type: 2}
+    level: 1

@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77586b9c49eccb243ad5d4fb64303e2c, type: 3}
+  m_Name: Articuno
+  m_EditorClassIdentifier: 
+  pokemonName: Articuno
+  description: "A legendary bird POK\xE9MON that is said to appear to\fdoomed people
+    who are lost in icy mountains."
+  frontSprite: {fileID: 21300000, guid: b8cf8fb2c1a602248be4eac42288e65d, type: 3}
+  backSprite: {fileID: 21300000, guid: 3f52bfc46cbe01d478edeb8bc315940d, type: 3}
+  type1: 6
+  type2: 10
+  maxHP: 90
+  attack: 85
+  defense: 100
+  spAttack: 95
+  spDefense: 125
+  speed: 85
+  LearnableMove:
+  - moveBase: {fileID: 11400000, guid: e247ef52c58d9d14c9e8b56ceddc4071, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 4fa0483f751b6f04eb510de705f42406, type: 2}
+    level: 16
+  - moveBase: {fileID: 11400000, guid: 28f4d33bd0690dd498d025ef92951dd1, type: 2}
+    level: 60
+  - moveBase: {fileID: 11400000, guid: 3f89e955d9afa2e4bbb26805a6e8a499, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 262a278668d6c3843be942fd1f8de8a4, type: 2}
+    level: 51
+  - moveBase: {fileID: 11400000, guid: b5b42387e4c87d64a9ea063ec10381b3, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 1b9c735f59d4d1947a74d01e807244e0, type: 2}
+    level: 55
+  - moveBase: {fileID: 11400000, guid: 757f3eae57ee6254fb9c402324068153, type: 2}
+    level: 60

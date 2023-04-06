@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77586b9c49eccb243ad5d4fb64303e2c, type: 3}
+  m_Name: Psyduck
+  m_EditorClassIdentifier: 
+  pokemonName: Psyduck
+  description: "While lulling its enemies with its vacant look, this\fwily POK\xE9MON
+    will use psychokinetic powers."
+  frontSprite: {fileID: 21300000, guid: ff30a67180b43f143bf755af59c851c4, type: 3}
+  backSprite: {fileID: 21300000, guid: d56ecb93b5e29364a808631a63fb5b7a, type: 3}
+  type1: 3
+  type2: 0
+  maxHP: 50
+  attack: 52
+  defense: 48
+  spAttack: 65
+  spDefense: 50
+  speed: 55
+  LearnableMove:
+  - moveBase: {fileID: 11400000, guid: 1ed275ebb3633e542ab1d5248e1a8a6c, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 920f56fdfa577e848b38338dc85b498f, type: 2}
+    level: 28
+  - moveBase: {fileID: 11400000, guid: 0bf41781e15dc9f48929b860466c1e5e, type: 2}
+    level: 31
+  - moveBase: {fileID: 11400000, guid: 2d245a1aab692ea46b36993a3b2d06e9, type: 2}
+    level: 52
+  - moveBase: {fileID: 11400000, guid: 2b625999442f1644c98f10e475e41e3d, type: 2}
+    level: 36
+  - moveBase: {fileID: 11400000, guid: 8ffde40b1b4d6da4288a4acf7e97f09e, type: 2}
+    level: 23
+  - moveBase: {fileID: 11400000, guid: 30f9a03243f20434c8fc2363046c66b4, type: 2}
+    level: 44
+  - moveBase: {fileID: 11400000, guid: 8773720b061af4e4f97b9d849ab2d877, type: 2}
+    level: 43

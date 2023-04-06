@@ -10,7 +10,7 @@ using UnityEditor;
 
 public class MoveBase : ScriptableObject
 {
-    [SerializeField] string name;
+    [SerializeField] new string name;
 
     [TextArea]
     [SerializeField] string description;
@@ -33,6 +33,20 @@ public class MoveBase : ScriptableObject
         this.accuracy = accuracy;
         this.pp = pp;
         this.type = type;
+    }
+
+    public void Init(string name, string description, int power, int accuracy, int pp, PokemonType type, MoveCategory category, MoveEffects effects, List<SecondaryEffects> secondaries, MoveTarget target) 
+    {
+        this.name = name;
+        this.description = description;
+        this.power = power;
+        this.accuracy = accuracy;
+        this.pp = pp;
+        this.type = type;
+        this.category = category;
+        this.effects = effects;
+        this.secondaries = secondaries;
+        this.target = target;
     }
 
 
@@ -80,6 +94,13 @@ public class MoveEffects
     [SerializeField] List<StatBoost> boosts;
     [SerializeField] ConditionID status;
     [SerializeField] ConditionID volatileStatus;
+
+    public MoveEffects(List<StatBoost> boosts, ConditionID status, ConditionID volatileStatus) // Add this constructor
+    {
+        this.boosts = boosts;
+        this.status = status;
+        this.volatileStatus = volatileStatus;
+    }
     
     public List<StatBoost> Boosts{
         get{ return boosts;}
@@ -98,6 +119,13 @@ public class SecondaryEffects : MoveEffects
     [SerializeField] int chance;
     [SerializeField] MoveTarget target;
 
+    public SecondaryEffects(List<StatBoost> boosts, ConditionID status, ConditionID volatileStatus, int chance, MoveTarget target) 
+        : base(boosts, status, volatileStatus) // Add this constructor
+    {
+        this.chance = chance;
+        this.target = target;
+    }
+
     public int Chance{
         get {return chance;}
     }
@@ -111,6 +139,12 @@ public class StatBoost
 {
     public Stat stat;
     public int boost;
+
+     public StatBoost(Stat stat, int boost) // Add this constructor
+    {
+        this.stat = stat;
+        this.boost = boost;
+    }
 }
 
 public enum MoveCategory
@@ -121,4 +155,3 @@ public enum MoveTarget
 {
     Foe, Self
 }
-

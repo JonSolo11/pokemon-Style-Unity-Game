@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77586b9c49eccb243ad5d4fb64303e2c, type: 3}
+  m_Name: Muk
+  m_EditorClassIdentifier: 
+  pokemonName: Muk
+  description: "Thickly covered with a filthy, vile sludge. It\fis so toxic, even
+    its footprints contain poison."
+  frontSprite: {fileID: 21300000, guid: 980928fa29737984ebb9f3715295daf8, type: 3}
+  backSprite: {fileID: 21300000, guid: a59652330b13ef04c8a19d888268a342, type: 3}
+  type1: 8
+  type2: 0
+  maxHP: 105
+  attack: 105
+  defense: 75
+  spAttack: 65
+  spDefense: 100
+  speed: 50
+  LearnableMove:
+  - moveBase: {fileID: 11400000, guid: ec11632b682ac834a8bf7e0ed83c85a5, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 0bf41781e15dc9f48929b860466c1e5e, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 8ffde40b1b4d6da4288a4acf7e97f09e, type: 2}
+    level: 53
+  - moveBase: {fileID: 11400000, guid: feb4ee5695aabcc4d97839f90626bd30, type: 2}
+    level: 45
+  - moveBase: {fileID: 11400000, guid: 8cd74e31c1651bc438adf459a53828dc, type: 2}
+    level: 33
+  - moveBase: {fileID: 11400000, guid: 757f3eae57ee6254fb9c402324068153, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: c9d752141806845478c5f2f9d4ab4a03, type: 2}
+    level: 37
+  - moveBase: {fileID: 11400000, guid: d002ed43aab3a764fa73853ca4d66b70, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 9f8f7c5d6b858274282f1816f4c47624, type: 2}
+    level: 60
+  - moveBase: {fileID: 11400000, guid: ec11632b682ac834a8bf7e0ed83c85a5, type: 2}
+    level: 1

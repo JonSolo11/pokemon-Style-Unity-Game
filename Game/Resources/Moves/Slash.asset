@@ -13,9 +13,22 @@ MonoBehaviour:
   m_Name: Slash
   m_EditorClassIdentifier: 
   name: Slash
-  description: The foe is attacked with a slash of claws, etc. It has a high critical-hit
-    ratio.
-  type: 0
+  description: "Has a high criti\xAD cal hit ratio."
+  type: 1
   power: 70
   accuracy: 100
+  alwaysHits: 0
   pp: 20
+  priority: 0
+  category: 0
+  effects:
+    boosts: []
+    status: 0
+    volatileStatus: 0
+  secondaries:
+  - boosts: []
+    status: 0
+    volatileStatus: 0
+    chance: 0
+    target: 0
+  target: 0

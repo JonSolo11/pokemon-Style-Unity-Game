@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77586b9c49eccb243ad5d4fb64303e2c, type: 3}
+  m_Name: Wigglytuff
+  m_EditorClassIdentifier: 
+  pokemonName: Wigglytuff
+  description: "The body is soft and rubbery. When angered, it will\fsuck in air
+    and inflate itself to an enormous size."
+  frontSprite: {fileID: 21300000, guid: be7d54eef26d9194e89771f5672060a2, type: 3}
+  backSprite: {fileID: 21300000, guid: 9a28d8bebaa38934fbd036b84caaa773, type: 3}
+  type1: 1
+  type2: 18
+  maxHP: 140
+  attack: 70
+  defense: 45
+  spAttack: 85
+  spDefense: 50
+  speed: 45
+  LearnableMove:
+  - moveBase: {fileID: 11400000, guid: ec11632b682ac834a8bf7e0ed83c85a5, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 009cf302cd89c8c489c9386a01f52435, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: eccb870cf9d69184d8c30f7c9fdf3201, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 0bf41781e15dc9f48929b860466c1e5e, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 8cd74e31c1651bc438adf459a53828dc, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: b1dfd1db887152d43a4ba92979080a87, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: ec11632b682ac834a8bf7e0ed83c85a5, type: 2}
+    level: 1

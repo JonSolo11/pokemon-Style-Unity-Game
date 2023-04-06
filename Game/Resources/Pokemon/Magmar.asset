@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77586b9c49eccb243ad5d4fb64303e2c, type: 3}
+  m_Name: Magmar
+  m_EditorClassIdentifier: 
+  pokemonName: Magmar
+  description: "Its body always burns with an orange glow that\fenables it to hide
+    perfectly among flames."
+  frontSprite: {fileID: 21300000, guid: f6ec0f634e0d1f848a90c90edd0918d0, type: 3}
+  backSprite: {fileID: 21300000, guid: b68646207d605c24aaa12ddd21544dc7, type: 3}
+  type1: 2
+  type2: 0
+  maxHP: 65
+  attack: 95
+  defense: 57
+  spAttack: 100
+  spDefense: 85
+  speed: 93
+  LearnableMove:
+  - moveBase: {fileID: 11400000, guid: 6b76f674fd6b76b4cb97815570600fae, type: 2}
+    level: 43
+  - moveBase: {fileID: 11400000, guid: 4fa0483f751b6f04eb510de705f42406, type: 2}
+    level: 36
+  - moveBase: {fileID: 11400000, guid: e1f8378a95a0ead45a645ab878dda05e, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: cf90737c2b11b7b4b8be8a6deca120f4, type: 2}
+    level: 55
+  - moveBase: {fileID: 11400000, guid: 9783b2e8db314fc45a01797a6f400b11, type: 2}
+    level: 19
+  - moveBase: {fileID: 11400000, guid: 86ff0e0b84fab284c94d769e1b84a163, type: 2}
+    level: 48
+  - moveBase: {fileID: 11400000, guid: 07abc203bcf2de84c895ca631654c159, type: 2}
+    level: 39
+  - moveBase: {fileID: 11400000, guid: 4973a8dcdf81e744e9c64971af6fb263, type: 2}
+    level: 52

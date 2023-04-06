@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77586b9c49eccb243ad5d4fb64303e2c, type: 3}
+  m_Name: Nidoking
+  m_EditorClassIdentifier: 
+  pokemonName: Nidoking
+  description: "It uses its powerful tail in battle to smash,\fconstrict, then break
+    the prey's bones."
+  frontSprite: {fileID: 21300000, guid: 74fc9f5cfaa95454f928e52d34d55b29, type: 3}
+  backSprite: {fileID: 21300000, guid: 1c129245edf39d94383b7c15f52abf04, type: 3}
+  type1: 8
+  type2: 9
+  maxHP: 81
+  attack: 102
+  defense: 77
+  spAttack: 85
+  spDefense: 75
+  speed: 85
+  LearnableMove:
+  - moveBase: {fileID: 11400000, guid: 76879ecffb283ff469b351d8d314d8eb, type: 2}
+    level: 12
+  - moveBase: {fileID: 11400000, guid: 6725d8c9ea63c5a4d9b79b689689e35d, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: ba320070b14934c45acc4c1636316d57, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: a1e2587217b91a841b27d37ca791c92f, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 0260c772371f42942bc01c83a03afb6c, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 4ce6ad641d7a3c846b1a98a108c602b8, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 4fa0483f751b6f04eb510de705f42406, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 3e21c656416b7284ca04ef9477f7acd1, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: b5b42387e4c87d64a9ea063ec10381b3, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 828299c98691e204699fc42ef9e0f0e7, type: 2}
+    level: 1

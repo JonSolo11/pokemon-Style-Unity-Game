@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77586b9c49eccb243ad5d4fb64303e2c, type: 3}
+  m_Name: Gastly
+  m_EditorClassIdentifier: 
+  pokemonName: Gastly
+  description: "Almost invisible, this gaseous POK\xE9MON cloaks\fthe target and
+    puts it to sleep without notice."
+  frontSprite: {fileID: 21300000, guid: e4f7c219d4f5472488070bc21307e903, type: 3}
+  backSprite: {fileID: 21300000, guid: 83136ea5955960a41b076f5ec7e53b4b, type: 3}
+  type1: 14
+  type2: 8
+  maxHP: 30
+  attack: 35
+  defense: 30
+  spAttack: 100
+  spDefense: 35
+  speed: 80
+  LearnableMove:
+  - moveBase: {fileID: 11400000, guid: ee72c1e152711d147a98dd92efdc2384, type: 2}
+    level: 27
+  - moveBase: {fileID: 11400000, guid: c41aea889850fa8449d2257d717ecb0d, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 07abc203bcf2de84c895ca631654c159, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 0fdffd23476282440bdeaa11b460ecbc, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 0127a50c9b59c56498becdf68684b0fd, type: 2}
+    level: 35
+  - moveBase: {fileID: 11400000, guid: d002ed43aab3a764fa73853ca4d66b70, type: 2}
+    level: 7

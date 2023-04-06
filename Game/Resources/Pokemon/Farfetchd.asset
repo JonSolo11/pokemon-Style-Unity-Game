@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77586b9c49eccb243ad5d4fb64303e2c, type: 3}
+  m_Name: Farfetchd
+  m_EditorClassIdentifier: 
+  pokemonName: Farfetchd
+  description: "The sprig of green onions it holds is its\fweapon. It is used much
+    like a metal sword."
+  frontSprite: {fileID: 21300000, guid: a6ff9b90aff489641a7bfdd1420a7750, type: 3}
+  backSprite: {fileID: 21300000, guid: 23c17985724a1a244ac1bfc8abebbc70, type: 3}
+  type1: 1
+  type2: 10
+  maxHP: 52
+  attack: 90
+  defense: 55
+  spAttack: 58
+  spDefense: 62
+  speed: 60
+  LearnableMove:
+  - moveBase: {fileID: 11400000, guid: 6053e46ce27a4614f9ac7c3552c157eb, type: 2}
+    level: 23
+  - moveBase: {fileID: 11400000, guid: c6bd009ef920ab04b88d4835172ae404, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: ba320070b14934c45acc4c1636316d57, type: 2}
+    level: 15
+  - moveBase: {fileID: 11400000, guid: 4fa0483f751b6f04eb510de705f42406, type: 2}
+    level: 7
+  - moveBase: {fileID: 11400000, guid: b5b42387e4c87d64a9ea063ec10381b3, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 88dead587acc3cf4d81d7f2a4a509e72, type: 2}
+    level: 13
+  - moveBase: {fileID: 11400000, guid: 1b9c735f59d4d1947a74d01e807244e0, type: 2}
+    level: 31
+  - moveBase: {fileID: 11400000, guid: 828299c98691e204699fc42ef9e0f0e7, type: 2}
+    level: 4
+  - moveBase: {fileID: 11400000, guid: e860d7834d9ec0e4f82c43468697797a, type: 2}
+    level: 39

@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77586b9c49eccb243ad5d4fb64303e2c, type: 3}
+  m_Name: Jolteon
+  m_EditorClassIdentifier: 
+  pokemonName: Jolteon
+  description: "It accumulates negative ions in the atmosphere to\fblast out 10000-
+    volt lightning bolts."
+  frontSprite: {fileID: 21300000, guid: 000a5f3733797444eafa590dc82c909c, type: 3}
+  backSprite: {fileID: 21300000, guid: d6a27895256a43845b112e005a0b14d5, type: 3}
+  type1: 4
+  type2: 0
+  maxHP: 65
+  attack: 65
+  defense: 60
+  spAttack: 110
+  spDefense: 95
+  speed: 130
+  LearnableMove:
+  - moveBase: {fileID: 11400000, guid: 76879ecffb283ff469b351d8d314d8eb, type: 2}
+    level: 42
+  - moveBase: {fileID: 11400000, guid: c6bd009ef920ab04b88d4835172ae404, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: a1e2587217b91a841b27d37ca791c92f, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 920f56fdfa577e848b38338dc85b498f, type: 2}
+    level: 37
+  - moveBase: {fileID: 11400000, guid: 7f40bef4f0eef834bb07545bedb9b826, type: 2}
+    level: 48
+  - moveBase: {fileID: 11400000, guid: 7f4e0945b31a04140b1a65bc5c71396f, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 08bb87a5680b4d5468c5304adde44ec8, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 6d0467ca2e742f74095458ea3a4be682, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 91deaa2a801bf5d43b7d17720e2e6dea, type: 2}
+    level: 40
+  - moveBase: {fileID: 11400000, guid: 01726369e49d20645b22daad523d0593, type: 2}
+    level: 54
+  - moveBase: {fileID: 11400000, guid: 1b9c735f59d4d1947a74d01e807244e0, type: 2}
+    level: 44
+  - moveBase: {fileID: 11400000, guid: d681c84c7bcb6b1418d94c90aa19c68d, type: 2}
+    level: 1

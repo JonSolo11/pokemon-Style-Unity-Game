@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77586b9c49eccb243ad5d4fb64303e2c, type: 3}
+  m_Name: Drowzee
+  m_EditorClassIdentifier: 
+  pokemonName: Drowzee
+  description: "Puts enemies to sleep then eats their dreams.\fOccasionally gets
+    sick from eating bad dreams."
+  frontSprite: {fileID: 21300000, guid: 2a55869272792a8489147e60f4817dd3, type: 3}
+  backSprite: {fileID: 21300000, guid: ac72dde38c4d48444b15ce0936222870, type: 3}
+  type1: 11
+  type2: 0
+  maxHP: 60
+  attack: 48
+  defense: 45
+  spAttack: 43
+  spDefense: 90
+  speed: 42
+  LearnableMove:
+  - moveBase: {fileID: 11400000, guid: ec11632b682ac834a8bf7e0ed83c85a5, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: a78dd826786796643bc29311c73bddfc, type: 2}
+    level: 24
+  - moveBase: {fileID: 11400000, guid: 0bf41781e15dc9f48929b860466c1e5e, type: 2}
+    level: 12
+  - moveBase: {fileID: 11400000, guid: 1239021ea49bd8644a510f29684ad454, type: 2}
+    level: 26
+  - moveBase: {fileID: 11400000, guid: 2b625999442f1644c98f10e475e41e3d, type: 2}
+    level: 17
+  - moveBase: {fileID: 11400000, guid: 17ffa946d70b1c24b99117c9611aa7f6, type: 2}
+    level: 32
+  - moveBase: {fileID: 11400000, guid: ee72c1e152711d147a98dd92efdc2384, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: ea2ed828366a7b54da980efcf4ae1b85, type: 2}
+    level: 37
+  - moveBase: {fileID: 11400000, guid: d002ed43aab3a764fa73853ca4d66b70, type: 2}
+    level: 29
+  - moveBase: {fileID: 11400000, guid: ec11632b682ac834a8bf7e0ed83c85a5, type: 2}
+    level: 1

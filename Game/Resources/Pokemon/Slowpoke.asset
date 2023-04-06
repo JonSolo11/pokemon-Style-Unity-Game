@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77586b9c49eccb243ad5d4fb64303e2c, type: 3}
+  m_Name: Slowpoke
+  m_EditorClassIdentifier: 
+  pokemonName: Slowpoke
+  description: "Incredibly slow and dopey. It takes 5 seconds\ffor it to feel pain
+    when under attack."
+  frontSprite: {fileID: 21300000, guid: fce9054ef55ace049aeba8750b8dcfee, type: 3}
+  backSprite: {fileID: 21300000, guid: 5d16387c36d6a1449920dd99c8fa3d6e, type: 3}
+  type1: 3
+  type2: 11
+  maxHP: 90
+  attack: 65
+  defense: 65
+  spAttack: 40
+  spDefense: 40
+  speed: 15
+  LearnableMove:
+  - moveBase: {fileID: 11400000, guid: a78dd826786796643bc29311c73bddfc, type: 2}
+    level: 22
+  - moveBase: {fileID: 11400000, guid: a1e2587217b91a841b27d37ca791c92f, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 08bb87a5680b4d5468c5304adde44ec8, type: 2}
+    level: 27
+  - moveBase: {fileID: 11400000, guid: 0bf41781e15dc9f48929b860466c1e5e, type: 2}
+    level: 18
+  - moveBase: {fileID: 11400000, guid: 04425952f35537947b9a42f612e8c84d, type: 2}
+    level: 33
+  - moveBase: {fileID: 11400000, guid: 2b625999442f1644c98f10e475e41e3d, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 17ffa946d70b1c24b99117c9611aa7f6, type: 2}
+    level: 48
+  - moveBase: {fileID: 11400000, guid: 30f9a03243f20434c8fc2363046c66b4, type: 2}
+    level: 40

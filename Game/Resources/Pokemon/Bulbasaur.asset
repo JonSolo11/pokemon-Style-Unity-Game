@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77586b9c49eccb243ad5d4fb64303e2c, type: 3}
   m_Name: Bulbasaur
   m_EditorClassIdentifier: 
-  name: Bulbasaur
-  description: The seed on its back is filled with nutrients. The seed grows steadily
-    larger as its body grows.
-  frontSprite: {fileID: -652954740, guid: e0d240745e0241d4e9423fc2e8eee62a, type: 3}
-  backSprite: {fileID: -1589237361, guid: 6e1a351c3dbed914394e24f9ba233014, type: 3}
+  pokemonName: Bulbasaur
+  description: "A strange seed was planted on its back at birth.\fThe plant sprouts
+    and grows with this POK\xE9MON."
+  frontSprite: {fileID: 21300000, guid: fc4e79cf387480445bc781cfafe3c1eb, type: 3}
+  backSprite: {fileID: 21300000, guid: 8608e80e33ea50746a0a99e2bde38ad6, type: 3}
   type1: 5
   type2: 8
   maxHP: 45
@@ -26,21 +26,21 @@ MonoBehaviour:
   spDefense: 65
   speed: 45
   LearnableMove:
-  - moveBase: {fileID: 11400000, guid: 7e8507ef486e86247a982a0f784b1e38, type: 2}
+  - moveBase: {fileID: 11400000, guid: ca943c5ab914c9b44987a88b30270402, type: 2}
+    level: 13
+  - moveBase: {fileID: 11400000, guid: a1e2587217b91a841b27d37ca791c92f, type: 2}
     level: 1
-  - moveBase: {fileID: 11400000, guid: fecd23324ea47694bbeadd70a81e5f64, type: 2}
-    level: 4
-  - moveBase: {fileID: 11400000, guid: 4f9d9f4b5db272041bd9f88280a39495, type: 2}
-    level: 9
-  - moveBase: {fileID: 11400000, guid: 83076643694ec5a41a369aaba30501da, type: 2}
+  - moveBase: {fileID: 11400000, guid: 08bb87a5680b4d5468c5304adde44ec8, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 35f493c5cb984124fbf6cf23d3fc046f, type: 2}
     level: 7
-  - moveBase: {fileID: 11400000, guid: 0a1f5d8d6e5fc7643b4917184a50656d, type: 2}
-    level: 20
-  - moveBase: {fileID: 11400000, guid: 44fb45ea7f59f3c4b98dfffa1b5405fa, type: 2}
-    level: 27
-  - moveBase: {fileID: 11400000, guid: 57dc4239ca09e1349a8b52d3927c487e, type: 2}
+  - moveBase: {fileID: 11400000, guid: 16f5ea516f4fbae4f8bc599ffa470e3c, type: 2}
     level: 34
-  - moveBase: {fileID: 11400000, guid: a2b80877519cff349b6a48c98772d669, type: 2}
-    level: 41
-  - moveBase: {fileID: 11400000, guid: 51bfa0e4a82713540890a9ed589935c6, type: 2}
+  - moveBase: {fileID: 11400000, guid: 88dead587acc3cf4d81d7f2a4a509e72, type: 2}
+    level: 27
+  - moveBase: {fileID: 11400000, guid: cf2749b8670a08441ab6d6ad1b0f9c1b, type: 2}
     level: 48
+  - moveBase: {fileID: 11400000, guid: e09c1e539e810fd4199752a31b8305b7, type: 2}
+    level: 20
+  - moveBase: {fileID: 11400000, guid: 4c99e7af04b316840a413ace9f6c49ab, type: 2}
+    level: 41

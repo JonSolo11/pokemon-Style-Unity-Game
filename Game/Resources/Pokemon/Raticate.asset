@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77586b9c49eccb243ad5d4fb64303e2c, type: 3}
+  m_Name: Raticate
+  m_EditorClassIdentifier: 
+  pokemonName: Raticate
+  description: "It uses its whis\xAD kers to maintain its balance.\fIt apparently
+    slows down if they are cut off."
+  frontSprite: {fileID: 21300000, guid: 9087edce7ec1d9e4d922cf27fb5ec2b7, type: 3}
+  backSprite: {fileID: 21300000, guid: 80fe14dbb27445546afa4a94d72a7c57, type: 3}
+  type1: 1
+  type2: 0
+  maxHP: 55
+  attack: 81
+  defense: 60
+  spAttack: 50
+  spDefense: 70
+  speed: 97
+  LearnableMove:
+  - moveBase: {fileID: 11400000, guid: 6053e46ce27a4614f9ac7c3552c157eb, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: a1e2587217b91a841b27d37ca791c92f, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 920f56fdfa577e848b38338dc85b498f, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 7f4e0945b31a04140b1a65bc5c71396f, type: 2}
+    level: 10
+  - moveBase: {fileID: 11400000, guid: d681c84c7bcb6b1418d94c90aa19c68d, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 828299c98691e204699fc42ef9e0f0e7, type: 2}
+    level: 27
+  - moveBase: {fileID: 11400000, guid: 8773720b061af4e4f97b9d849ab2d877, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: c7d947234d954584d8a8c1faa6125233, type: 2}
+    level: 14
+  - moveBase: {fileID: 11400000, guid: 21be5908b90de6b46a324fb881972400, type: 2}
+    level: 41

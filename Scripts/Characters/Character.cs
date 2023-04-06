@@ -64,7 +64,7 @@ public class Character : MonoBehaviour
         return true;
     }
 
-    public void Looktowards(Vector3 targetPos)
+    public void LookTowards(Vector3 targetPos)
     {
         var xdiff = Mathf.Floor(targetPos.x) - Mathf.Floor(transform.position.x);
         var ydiff = Mathf.Floor(targetPos.y) - Mathf.Floor(transform.position.y);

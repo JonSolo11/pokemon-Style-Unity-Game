@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77586b9c49eccb243ad5d4fb64303e2c, type: 3}
+  m_Name: Kakuna
+  m_EditorClassIdentifier: 
+  pokemonName: Kakuna
+  description: "Almost incapable of moving, this POK\xE9MON can only\fharden its
+    shell to protect itself from predators."
+  frontSprite: {fileID: 21300000, guid: 9bc6bf00003093a428fbf55d40a59b37, type: 3}
+  backSprite: {fileID: 21300000, guid: aa365255a73438744bcb4ace4bffc6bf, type: 3}
+  type1: 12
+  type2: 8
+  maxHP: 45
+  attack: 25
+  defense: 50
+  spAttack: 25
+  spDefense: 25
+  speed: 35
+  LearnableMove:
+  - moveBase: {fileID: 11400000, guid: feb4ee5695aabcc4d97839f90626bd30, type: 2}
+    level: 1

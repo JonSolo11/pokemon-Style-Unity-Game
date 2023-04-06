@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77586b9c49eccb243ad5d4fb64303e2c, type: 3}
+  m_Name: Pidgeot
+  m_EditorClassIdentifier: 
+  pokemonName: Pidgeot
+  description: "When hunting, it skims the surface of water at high\fspeed to pick
+    off unwary prey such as MAGIKARP."
+  frontSprite: {fileID: 21300000, guid: 90d207f4aeea87047a04aa05811255e5, type: 3}
+  backSprite: {fileID: 21300000, guid: cd0226a5de23b3d439c8014a0cea3b78, type: 3}
+  type1: 1
+  type2: 10
+  maxHP: 83
+  attack: 80
+  defense: 75
+  spAttack: 70
+  spDefense: 70
+  speed: 101
+  LearnableMove:
+  - moveBase: {fileID: 11400000, guid: e247ef52c58d9d14c9e8b56ceddc4071, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: dc3f29dd60ce08449bf0ac9cf7588dbb, type: 2}
+    level: 31
+  - moveBase: {fileID: 11400000, guid: 2b62a6b3a885bc94ea56a2f72444a63c, type: 2}
+    level: 21
+  - moveBase: {fileID: 11400000, guid: c6bd009ef920ab04b88d4835172ae404, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: a1e2587217b91a841b27d37ca791c92f, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 1b9c735f59d4d1947a74d01e807244e0, type: 2}
+    level: 44
+  - moveBase: {fileID: 11400000, guid: d681c84c7bcb6b1418d94c90aa19c68d, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 31919ba83c9b8444eac75ae2ccf0e6ef, type: 2}
+    level: 54

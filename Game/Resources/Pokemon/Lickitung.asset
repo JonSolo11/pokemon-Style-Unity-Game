@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77586b9c49eccb243ad5d4fb64303e2c, type: 3}
+  m_Name: Lickitung
+  m_EditorClassIdentifier: 
+  pokemonName: Lickitung
+  description: "Its tongue can be extended like a chameleon's. It\fleaves a tingling
+    sensation when it licks enemies."
+  frontSprite: {fileID: 21300000, guid: 27d103ba45efa724e96e64e386382435, type: 3}
+  backSprite: {fileID: 21300000, guid: afc3f03846e12274d90e069a6e8dce3c, type: 3}
+  type1: 1
+  type2: 0
+  maxHP: 90
+  attack: 55
+  defense: 75
+  spAttack: 60
+  spDefense: 75
+  speed: 30
+  LearnableMove:
+  - moveBase: {fileID: 11400000, guid: 54a9be60939ba7146bcde34d275d78ff, type: 2}
+    level: 31
+  - moveBase: {fileID: 11400000, guid: ad4d2f71f41cdd542bdb126e45d93aa2, type: 2}
+    level: 7
+  - moveBase: {fileID: 11400000, guid: 6a5dcb28a855efe45b36895097b8334d, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 3e21c656416b7284ca04ef9477f7acd1, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 0bf41781e15dc9f48929b860466c1e5e, type: 2}
+    level: 15
+  - moveBase: {fileID: 11400000, guid: 247f4aa23e4e02249b9a7872f1ac5cff, type: 2}
+    level: 10
+  - moveBase: {fileID: 11400000, guid: 8ffde40b1b4d6da4288a4acf7e97f09e, type: 2}
+    level: 39
+  - moveBase: {fileID: 11400000, guid: b1dfd1db887152d43a4ba92979080a87, type: 2}
+    level: 23
+  - moveBase: {fileID: 11400000, guid: 0fdffd23476282440bdeaa11b460ecbc, type: 2}
+    level: 1

@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77586b9c49eccb243ad5d4fb64303e2c, type: 3}
+  m_Name: Omanyte
+  m_EditorClassIdentifier: 
+  pokemonName: Omanyte
+  description: "Although long extinct, in rare cases, it can be\fgenetically resurrected
+    from fossils."
+  frontSprite: {fileID: 21300000, guid: 094c7da455d8d5b48a65e0dece86384b, type: 3}
+  backSprite: {fileID: 21300000, guid: d4cf619afae07114da09734ad05270cd, type: 3}
+  type1: 13
+  type2: 3
+  maxHP: 35
+  attack: 40
+  defense: 100
+  spAttack: 90
+  spDefense: 55
+  speed: 35
+  LearnableMove:
+  - moveBase: {fileID: 11400000, guid: c6bd009ef920ab04b88d4835172ae404, type: 2}
+    level: 10
+  - moveBase: {fileID: 11400000, guid: 6725d8c9ea63c5a4d9b79b689689e35d, type: 2}
+    level: 34
+  - moveBase: {fileID: 11400000, guid: 4fa0483f751b6f04eb510de705f42406, type: 2}
+    level: 39
+  - moveBase: {fileID: 11400000, guid: 7f4e0945b31a04140b1a65bc5c71396f, type: 2}
+    level: 13
+  - moveBase: {fileID: 11400000, guid: 04425952f35537947b9a42f612e8c84d, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 2d245a1aab692ea46b36993a3b2d06e9, type: 2}
+    level: 53
+  - moveBase: {fileID: 11400000, guid: e654147326ea0b049b24583eb752ed92, type: 2}
+    level: 26
+  - moveBase: {fileID: 11400000, guid: 987f539aa328dd54e8677e04f79772e1, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: e001c48b10b3a2449b922afd215c8b54, type: 2}
+    level: 46
+  - moveBase: {fileID: 11400000, guid: dd895637f9231744baaab0adfc9c8e14, type: 2}
+    level: 1

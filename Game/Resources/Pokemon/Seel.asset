@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77586b9c49eccb243ad5d4fb64303e2c, type: 3}
+  m_Name: Seel
+  m_EditorClassIdentifier: 
+  pokemonName: Seel
+  description: "The protruding horn on its head is very hard.\fIt is used for bashing
+    through thick ice."
+  frontSprite: {fileID: 21300000, guid: e3c0170a1112e6545b6b10383f50275d, type: 3}
+  backSprite: {fileID: 21300000, guid: f5986186ab3935846a4b6770616fc61e, type: 3}
+  type1: 3
+  type2: 0
+  maxHP: 65
+  attack: 45
+  defense: 55
+  spAttack: 45
+  spDefense: 70
+  speed: 45
+  LearnableMove:
+  - moveBase: {fileID: 11400000, guid: a78dd826786796643bc29311c73bddfc, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: dc9ecd4296f692a42947cb5c8db41c38, type: 2}
+    level: 45
+  - moveBase: {fileID: 11400000, guid: 08bb87a5680b4d5468c5304adde44ec8, type: 2}
+    level: 30
+  - moveBase: {fileID: 11400000, guid: 3f89e955d9afa2e4bbb26805a6e8a499, type: 2}
+    level: 50
+  - moveBase: {fileID: 11400000, guid: 4ddad544999f78a4b971c32c470f0a0a, type: 2}
+    level: 35
+  - moveBase: {fileID: 11400000, guid: ee52c0ab8bb4f9a499be4c8289c38e33, type: 2}
+    level: 40

@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77586b9c49eccb243ad5d4fb64303e2c, type: 3}
+  m_Name: Golbat
+  m_EditorClassIdentifier: 
+  pokemonName: Golbat
+  description: "Once it strikes, it will not stop draining energy\ffrom the victim
+    even if it gets too heavy to fly."
+  frontSprite: {fileID: 21300000, guid: 1b5538dafe9849642823fb9378ba2675, type: 3}
+  backSprite: {fileID: 21300000, guid: 5633fdb08893d9c47b2ecf7d2382f4d9, type: 3}
+  type1: 8
+  type2: 10
+  maxHP: 75
+  attack: 80
+  defense: 70
+  spAttack: 65
+  spDefense: 75
+  speed: 90
+  LearnableMove:
+  - moveBase: {fileID: 11400000, guid: dc3f29dd60ce08449bf0ac9cf7588dbb, type: 2}
+    level: 32
+  - moveBase: {fileID: 11400000, guid: 7f4e0945b31a04140b1a65bc5c71396f, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 3e21c656416b7284ca04ef9477f7acd1, type: 2}
+    level: 10
+  - moveBase: {fileID: 11400000, guid: 5057304ebaaf0244e98ae9f506316e96, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: d681c84c7bcb6b1418d94c90aa19c68d, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 8ffde40b1b4d6da4288a4acf7e97f09e, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 07abc203bcf2de84c895ca631654c159, type: 2}
+    level: 21
+  - moveBase: {fileID: 11400000, guid: 757f3eae57ee6254fb9c402324068153, type: 2}
+    level: 43
+  - moveBase: {fileID: 11400000, guid: 306deac5d08cf354aa112802ffa4ddb5, type: 2}
+    level: 1

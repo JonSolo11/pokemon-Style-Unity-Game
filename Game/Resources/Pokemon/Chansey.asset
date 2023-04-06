@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77586b9c49eccb243ad5d4fb64303e2c, type: 3}
+  m_Name: Chansey
+  m_EditorClassIdentifier: 
+  pokemonName: Chansey
+  description: "A rare and elusive POK\xE9MON that is said to bring\fhappiness to
+    those who manage to get it."
+  frontSprite: {fileID: 21300000, guid: fb7602c8316af7948a64427dbbcd272c, type: 3}
+  backSprite: {fileID: 21300000, guid: 30e58fe0cd67fca4c9f1e30c31a995dd, type: 3}
+  type1: 1
+  type2: 0
+  maxHP: 250
+  attack: 5
+  defense: 5
+  spAttack: 35
+  spDefense: 105
+  speed: 50
+  LearnableMove:
+  - moveBase: {fileID: 11400000, guid: ec11632b682ac834a8bf7e0ed83c85a5, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 009cf302cd89c8c489c9386a01f52435, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 8468e518ef026ee49a3093032f53e759, type: 2}
+    level: 54
+  - moveBase: {fileID: 11400000, guid: 920f56fdfa577e848b38338dc85b498f, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 08bb87a5680b4d5468c5304adde44ec8, type: 2}
+    level: 30
+  - moveBase: {fileID: 11400000, guid: eccb870cf9d69184d8c30f7c9fdf3201, type: 2}
+    level: 24
+  - moveBase: {fileID: 11400000, guid: 8cd74e31c1651bc438adf459a53828dc, type: 2}
+    level: 38
+  - moveBase: {fileID: 11400000, guid: b1dfd1db887152d43a4ba92979080a87, type: 2}
+    level: 44
+  - moveBase: {fileID: 11400000, guid: c14cdc96ea43d4444948abf4dabc731d, type: 2}
+    level: 48
+  - moveBase: {fileID: 11400000, guid: ec11632b682ac834a8bf7e0ed83c85a5, type: 2}
+    level: 1

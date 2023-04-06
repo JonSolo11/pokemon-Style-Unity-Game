@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77586b9c49eccb243ad5d4fb64303e2c, type: 3}
+  m_Name: Machop
+  m_EditorClassIdentifier: 
+  pokemonName: Machop
+  description: "Loves to build its muscles. It trains in all\fstyles of martial arts
+    to become even stronger."
+  frontSprite: {fileID: 21300000, guid: a57ac4b29056ee24d89b929bccab0c8b, type: 3}
+  backSprite: {fileID: 21300000, guid: 67a240e17ffe36740a6f2850a2be0312, type: 3}
+  type1: 7
+  type2: 0
+  maxHP: 70
+  attack: 80
+  defense: 50
+  spAttack: 35
+  spDefense: 35
+  speed: 35
+  LearnableMove:
+  - moveBase: {fileID: 11400000, guid: b8ad25fc61c863840aa796ab85eb2056, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 4fa0483f751b6f04eb510de705f42406, type: 2}
+    level: 25
+  - moveBase: {fileID: 11400000, guid: 5fda0d6ba1f13b2498d61ad67dfbe960, type: 2}
+    level: 46
+  - moveBase: {fileID: 11400000, guid: 2b2d6e271596e3840a64aa0648ca60c8, type: 2}
+    level: 20
+  - moveBase: {fileID: 11400000, guid: c2642361c61a4a949816a68fd162105a, type: 2}
+    level: 39
+  - moveBase: {fileID: 11400000, guid: 828299c98691e204699fc42ef9e0f0e7, type: 2}
+    level: 32

@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77586b9c49eccb243ad5d4fb64303e2c, type: 3}
+  m_Name: Doduo
+  m_EditorClassIdentifier: 
+  pokemonName: Doduo
+  description: "A bird that makes up for its poor flying with its\ffast foot speed.
+    Leaves giant footprints."
+  frontSprite: {fileID: 21300000, guid: ebaee514804f99b4f8540608a4e38403, type: 3}
+  backSprite: {fileID: 21300000, guid: 31c654a346ff2e94880b7cfc88d527a0, type: 3}
+  type1: 1
+  type2: 10
+  maxHP: 35
+  attack: 85
+  defense: 45
+  spAttack: 35
+  spDefense: 35
+  speed: 75
+  LearnableMove:
+  - moveBase: {fileID: 11400000, guid: 6053e46ce27a4614f9ac7c3552c157eb, type: 2}
+    level: 36
+  - moveBase: {fileID: 11400000, guid: 379232811971fd849a703c918875189e, type: 2}
+    level: 40
+  - moveBase: {fileID: 11400000, guid: ba320070b14934c45acc4c1636316d57, type: 2}
+    level: 24
+  - moveBase: {fileID: 11400000, guid: 0260c772371f42942bc01c83a03afb6c, type: 2}
+    level: 50
+  - moveBase: {fileID: 11400000, guid: 08bb87a5680b4d5468c5304adde44ec8, type: 2}
+    level: 20
+  - moveBase: {fileID: 11400000, guid: b5b42387e4c87d64a9ea063ec10381b3, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 949856019591e874e9d5505b37bf5b42, type: 2}
+    level: 30
+  - moveBase: {fileID: 11400000, guid: 1b9c735f59d4d1947a74d01e807244e0, type: 2}
+    level: 44
+  - moveBase: {fileID: 11400000, guid: c362241983e864d45979c2e2bc5f5a36, type: 2}
+    level: 36
+  - moveBase: {fileID: 11400000, guid: 44bb33c043127aa449080a0ce452288c, type: 2}
+    level: 40

@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77586b9c49eccb243ad5d4fb64303e2c, type: 3}
+  m_Name: Onix
+  m_EditorClassIdentifier: 
+  pokemonName: Onix
+  description: "As it grows, the stone portions of its body harden\fto become similar
+    to a diamond, but colored black."
+  frontSprite: {fileID: 21300000, guid: 22edbabed73801746928747a7d3bf523, type: 3}
+  backSprite: {fileID: 21300000, guid: 7a7446c7d905ca84e91f14a480baf6da, type: 3}
+  type1: 13
+  type2: 9
+  maxHP: 35
+  attack: 45
+  defense: 160
+  spAttack: 30
+  spDefense: 45
+  speed: 70
+  LearnableMove:
+  - moveBase: {fileID: 11400000, guid: e5dfc9a2441143a47a8d74c1c5ce9bef, type: 2}
+    level: 15
+  - moveBase: {fileID: 11400000, guid: 54a9be60939ba7146bcde34d275d78ff, type: 2}
+    level: 33
+  - moveBase: {fileID: 11400000, guid: a1e2587217b91a841b27d37ca791c92f, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: e654147326ea0b049b24583eb752ed92, type: 2}
+    level: 19
+  - moveBase: {fileID: 11400000, guid: c362241983e864d45979c2e2bc5f5a36, type: 2}
+    level: 25
+  - moveBase: {fileID: 11400000, guid: 8ffde40b1b4d6da4288a4acf7e97f09e, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: feb4ee5695aabcc4d97839f90626bd30, type: 2}
+    level: 43

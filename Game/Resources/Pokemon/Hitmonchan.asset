@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77586b9c49eccb243ad5d4fb64303e2c, type: 3}
+  m_Name: Hitmonchan
+  m_EditorClassIdentifier: 
+  pokemonName: Hitmonchan
+  description: "While apparently doing nothing, it fires punches in\flightning fast
+    volleys that are impossible to see."
+  frontSprite: {fileID: 21300000, guid: 0e07a01f5b7ac92459b54781d31be107, type: 3}
+  backSprite: {fileID: 21300000, guid: 667ae707de91e4c409c4d7842e09c1d4, type: 3}
+  type1: 7
+  type2: 0
+  maxHP: 50
+  attack: 105
+  defense: 79
+  spAttack: 35
+  spDefense: 110
+  speed: 76
+  LearnableMove:
+  - moveBase: {fileID: 11400000, guid: 3f365060be1c1c64db486c7d8eef2a60, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 0c4b6fc2cc190a4438420bd1f2ef3a50, type: 2}
+    level: 48
+  - moveBase: {fileID: 11400000, guid: 6b76f674fd6b76b4cb97815570600fae, type: 2}
+    level: 33
+  - moveBase: {fileID: 11400000, guid: 1a6b107e5a04da94781d6b29c355744b, type: 2}
+    level: 38
+  - moveBase: {fileID: 11400000, guid: fff587ff03008b44ba758217a9032463, type: 2}
+    level: 43
+  - moveBase: {fileID: 11400000, guid: a1e2587217b91a841b27d37ca791c92f, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 4fa0483f751b6f04eb510de705f42406, type: 2}
+    level: 5
+  - moveBase: {fileID: 11400000, guid: 0c67f98f4de380048b69caecab72dbff, type: 2}
+    level: 53
+  - moveBase: {fileID: 11400000, guid: 1b9c735f59d4d1947a74d01e807244e0, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 828299c98691e204699fc42ef9e0f0e7, type: 2}
+    level: 35
+  - moveBase: {fileID: 11400000, guid: 67d15c55aed874c49998529a6f1557b9, type: 2}
+    level: 25

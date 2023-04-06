@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77586b9c49eccb243ad5d4fb64303e2c, type: 3}
+  m_Name: Nidoqueen
+  m_EditorClassIdentifier: 
+  pokemonName: Nidoqueen
+  description: "Its hard scales provide strong protection. It\fuses its hefty bulk
+    to execute powerful moves."
+  frontSprite: {fileID: 21300000, guid: 40359cb327ca09c4b9a7166263086e98, type: 3}
+  backSprite: {fileID: 21300000, guid: 68f70f1864321f840a0d63ef48df4629, type: 3}
+  type1: 8
+  type2: 9
+  maxHP: 90
+  attack: 92
+  defense: 87
+  spAttack: 75
+  spDefense: 85
+  speed: 76
+  LearnableMove:
+  - moveBase: {fileID: 11400000, guid: 1ed275ebb3633e542ab1d5248e1a8a6c, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 76879ecffb283ff469b351d8d314d8eb, type: 2}
+    level: 12
+  - moveBase: {fileID: 11400000, guid: a1e2587217b91a841b27d37ca791c92f, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 8a27a6e4766e4e94d8733be016a0bedd, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 920f56fdfa577e848b38338dc85b498f, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 4ce6ad641d7a3c846b1a98a108c602b8, type: 2}
+    level: 14
+  - moveBase: {fileID: 11400000, guid: 7f4e0945b31a04140b1a65bc5c71396f, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 08bb87a5680b4d5468c5304adde44ec8, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 3e21c656416b7284ca04ef9477f7acd1, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 8773720b061af4e4f97b9d849ab2d877, type: 2}
+    level: 1

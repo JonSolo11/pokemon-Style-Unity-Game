@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77586b9c49eccb243ad5d4fb64303e2c, type: 3}
+  m_Name: Horsea
+  m_EditorClassIdentifier: 
+  pokemonName: Horsea
+  description: "Known to shoot down flying bugs with precision\fblasts of ink from
+    the surface of the water."
+  frontSprite: {fileID: 21300000, guid: f277c5aae5be4be438837a36b5ab5b28, type: 3}
+  backSprite: {fileID: 21300000, guid: 7f255febe166cd4459686d235ff06cdb, type: 3}
+  type1: 3
+  type2: 0
+  maxHP: 30
+  attack: 40
+  defense: 70
+  spAttack: 70
+  spDefense: 25
+  speed: 60
+  LearnableMove:
+  - moveBase: {fileID: 11400000, guid: 4fa0483f751b6f04eb510de705f42406, type: 2}
+    level: 24
+  - moveBase: {fileID: 11400000, guid: 04425952f35537947b9a42f612e8c84d, type: 2}
+    level: 30
+  - moveBase: {fileID: 11400000, guid: 2d245a1aab692ea46b36993a3b2d06e9, type: 2}
+    level: 45
+  - moveBase: {fileID: 11400000, guid: 1b9c735f59d4d1947a74d01e807244e0, type: 2}
+    level: 37
+  - moveBase: {fileID: 11400000, guid: 86ff0e0b84fab284c94d769e1b84a163, type: 2}
+    level: 19
+  - moveBase: {fileID: 11400000, guid: 828299c98691e204699fc42ef9e0f0e7, type: 2}
+    level: 14
+  - moveBase: {fileID: 11400000, guid: b496c71c91c4d4f4eac4ca97c5d3f50b, type: 2}
+    level: 1

@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77586b9c49eccb243ad5d4fb64303e2c, type: 3}
+  m_Name: Kabutops
+  m_EditorClassIdentifier: 
+  pokemonName: Kabutops
+  description: "Its sleek shape is perfect for swim\xAD ming. It slashes\fprey with
+    its claws and drains the body fluids."
+  frontSprite: {fileID: 21300000, guid: b65d6bff2a9d4de4e9155e5f281d3fb0, type: 3}
+  backSprite: {fileID: 21300000, guid: f6a148f2ae3f8e144b7ed25bf25fbb58, type: 3}
+  type1: 13
+  type2: 3
+  maxHP: 60
+  attack: 115
+  defense: 105
+  spAttack: 65
+  spDefense: 70
+  speed: 80
+  LearnableMove:
+  - moveBase: {fileID: 11400000, guid: 1ed275ebb3633e542ab1d5248e1a8a6c, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: c6bd009ef920ab04b88d4835172ae404, type: 2}
+    level: 28
+  - moveBase: {fileID: 11400000, guid: 4fa0483f751b6f04eb510de705f42406, type: 2}
+    level: 46
+  - moveBase: {fileID: 11400000, guid: 2d245a1aab692ea46b36993a3b2d06e9, type: 2}
+    level: 53
+  - moveBase: {fileID: 11400000, guid: 5057304ebaaf0244e98ae9f506316e96, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: b60fad892aae3af4bb741c537e5f7e09, type: 2}
+    level: 51
+  - moveBase: {fileID: 11400000, guid: e654147326ea0b049b24583eb752ed92, type: 2}
+    level: 30
+  - moveBase: {fileID: 11400000, guid: 8ffde40b1b4d6da4288a4acf7e97f09e, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: feb4ee5695aabcc4d97839f90626bd30, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 07abc203bcf2de84c895ca631654c159, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 306deac5d08cf354aa112802ffa4ddb5, type: 2}
+    level: 54
+  - moveBase: {fileID: 11400000, guid: e860d7834d9ec0e4f82c43468697797a, type: 2}
+    level: 39

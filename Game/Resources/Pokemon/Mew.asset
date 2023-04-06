@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77586b9c49eccb243ad5d4fb64303e2c, type: 3}
+  m_Name: Mew
+  m_EditorClassIdentifier: 
+  pokemonName: Mew
+  description: "So rare that it is still said to be a mirage by\fmany experts. Only
+    a few people have seen it worldwide."
+  frontSprite: {fileID: 21300000, guid: d9d1620738d2c4d4b8a99ed9c393ccc4, type: 3}
+  backSprite: {fileID: 21300000, guid: 5f4abd273617da34fb8cc112ab4cce87, type: 3}
+  type1: 11
+  type2: 0
+  maxHP: 100
+  attack: 100
+  defense: 100
+  spAttack: 100
+  spDefense: 100
+  speed: 100
+  LearnableMove:
+  - moveBase: {fileID: 11400000, guid: ec11632b682ac834a8bf7e0ed83c85a5, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 0c4b6fc2cc190a4438420bd1f2ef3a50, type: 2}
+    level: 20
+  - moveBase: {fileID: 11400000, guid: 2b625999442f1644c98f10e475e41e3d, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 17ffa946d70b1c24b99117c9611aa7f6, type: 2}
+    level: 40
+  - moveBase: {fileID: 11400000, guid: cfe9f5c85a2a3de4f8760794ab743145, type: 2}
+    level: 40
+  - moveBase: {fileID: 11400000, guid: d02d43092e3e6f3498bd8282dc73ea65, type: 2}
+    level: 30
+  - moveBase: {fileID: 11400000, guid: 30f9a03243f20434c8fc2363046c66b4, type: 2}
+    level: 60
+  - moveBase: {fileID: 11400000, guid: de379dd7f72833a4d99a8615839d2f97, type: 2}
+    level: 10
+  - moveBase: {fileID: 11400000, guid: ec11632b682ac834a8bf7e0ed83c85a5, type: 2}
+    level: 1

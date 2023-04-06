@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77586b9c49eccb243ad5d4fb64303e2c, type: 3}
+  m_Name: Clefairy
+  m_EditorClassIdentifier: 
+  pokemonName: Clefairy
+  description: "Its magical and cute appeal has many admirers.\fIt is rare and found
+    only in certain areas."
+  frontSprite: {fileID: 21300000, guid: 5517ddfb2df28aa4a9ec8e7c61dddecc, type: 3}
+  backSprite: {fileID: 21300000, guid: 55535772a00afbc4e9ad78e4b7d29ed7, type: 3}
+  type1: 18
+  type2: 0
+  maxHP: 70
+  attack: 45
+  defense: 48
+  spAttack: 60
+  spDefense: 65
+  speed: 35
+  LearnableMove:
+  - moveBase: {fileID: 11400000, guid: ec11632b682ac834a8bf7e0ed83c85a5, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 009cf302cd89c8c489c9386a01f52435, type: 2}
+    level: 18
+  - moveBase: {fileID: 11400000, guid: 08bb87a5680b4d5468c5304adde44ec8, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: eccb870cf9d69184d8c30f7c9fdf3201, type: 2}
+    level: 13
+  - moveBase: {fileID: 11400000, guid: 8cd74e31c1651bc438adf459a53828dc, type: 2}
+    level: 24
+  - moveBase: {fileID: 11400000, guid: b1dfd1db887152d43a4ba92979080a87, type: 2}
+    level: 39
+  - moveBase: {fileID: 11400000, guid: c14cdc96ea43d4444948abf4dabc731d, type: 2}
+    level: 48
+  - moveBase: {fileID: 11400000, guid: d02d43092e3e6f3498bd8282dc73ea65, type: 2}
+    level: 31
+  - moveBase: {fileID: 11400000, guid: 30f9a03243f20434c8fc2363046c66b4, type: 2}
+    level: 16
+  - moveBase: {fileID: 11400000, guid: a08cafdec7d470044a7b77563c52031f, type: 2}
+    level: 1

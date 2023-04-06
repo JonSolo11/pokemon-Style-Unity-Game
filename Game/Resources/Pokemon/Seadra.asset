@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77586b9c49eccb243ad5d4fb64303e2c, type: 3}
+  m_Name: Seadra
+  m_EditorClassIdentifier: 
+  pokemonName: Seadra
+  description: "Capable of swim\xAD ming backwards by rapidly flapping\fits wing-like
+    pectoral fins and stout tail."
+  frontSprite: {fileID: 21300000, guid: 2ff4211526f7616489f7a515262130f7, type: 3}
+  backSprite: {fileID: 21300000, guid: 17470817e97f9d341bb59c0fb7834c65, type: 3}
+  type1: 3
+  type2: 0
+  maxHP: 55
+  attack: 65
+  defense: 95
+  spAttack: 95
+  spDefense: 45
+  speed: 85
+  LearnableMove:
+  - moveBase: {fileID: 11400000, guid: 4fa0483f751b6f04eb510de705f42406, type: 2}
+    level: 24
+  - moveBase: {fileID: 11400000, guid: 0bf41781e15dc9f48929b860466c1e5e, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 04425952f35537947b9a42f612e8c84d, type: 2}
+    level: 30
+  - moveBase: {fileID: 11400000, guid: 2d245a1aab692ea46b36993a3b2d06e9, type: 2}
+    level: 52
+  - moveBase: {fileID: 11400000, guid: 1b9c735f59d4d1947a74d01e807244e0, type: 2}
+    level: 41
+  - moveBase: {fileID: 11400000, guid: 86ff0e0b84fab284c94d769e1b84a163, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 828299c98691e204699fc42ef9e0f0e7, type: 2}
+    level: 14
+  - moveBase: {fileID: 11400000, guid: b496c71c91c4d4f4eac4ca97c5d3f50b, type: 2}
+    level: 1

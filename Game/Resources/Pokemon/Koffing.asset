@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77586b9c49eccb243ad5d4fb64303e2c, type: 3}
+  m_Name: Koffing
+  m_EditorClassIdentifier: 
+  pokemonName: Koffing
+  description: "Because it stores several kinds of toxic gases in\fits body, it is
+    prone to exploding without warning."
+  frontSprite: {fileID: 21300000, guid: 9ae92075af538604caca29c0bd6600f7, type: 3}
+  backSprite: {fileID: 21300000, guid: f759b3aed2b4f8345a9e8a690c1d9afa, type: 3}
+  type1: 8
+  type2: 0
+  maxHP: 40
+  attack: 65
+  defense: 95
+  spAttack: 60
+  spDefense: 45
+  speed: 35
+  LearnableMove:
+  - moveBase: {fileID: 11400000, guid: a1e2587217b91a841b27d37ca791c92f, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 86ff0e0b84fab284c94d769e1b84a163, type: 2}
+    level: 37
+  - moveBase: {fileID: 11400000, guid: 757f3eae57ee6254fb9c402324068153, type: 2}
+    level: 45
+  - moveBase: {fileID: 11400000, guid: 6e2d0cf7cabb7214a973aa032d1e66e5, type: 2}
+    level: 40
+  - moveBase: {fileID: 11400000, guid: 4973a8dcdf81e744e9c64971af6fb263, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: c9d752141806845478c5f2f9d4ab4a03, type: 2}
+    level: 32
+  - moveBase: {fileID: 11400000, guid: d002ed43aab3a764fa73853ca4d66b70, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: ce3d8c9e51cef1a47832c411db7be328, type: 2}
+    level: 48

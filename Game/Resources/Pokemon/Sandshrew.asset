@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77586b9c49eccb243ad5d4fb64303e2c, type: 3}
+  m_Name: Sandshrew
+  m_EditorClassIdentifier: 
+  pokemonName: Sandshrew
+  description: "Burrows deep underground in arid locations\ffar from water. It only
+    emerges to hunt for food."
+  frontSprite: {fileID: 21300000, guid: c1ed51f06c365d742b91c4c18d16784d, type: 3}
+  backSprite: {fileID: 21300000, guid: 825bb127f2541084cb0e6b0a807a93d2, type: 3}
+  type1: 9
+  type2: 0
+  maxHP: 50
+  attack: 75
+  defense: 85
+  spAttack: 20
+  spDefense: 30
+  speed: 40
+  LearnableMove:
+  - moveBase: {fileID: 11400000, guid: 1ed275ebb3633e542ab1d5248e1a8a6c, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: c6bd009ef920ab04b88d4835172ae404, type: 2}
+    level: 10
+  - moveBase: {fileID: 11400000, guid: 4ce6ad641d7a3c846b1a98a108c602b8, type: 2}
+    level: 24
+  - moveBase: {fileID: 11400000, guid: 1b9c735f59d4d1947a74d01e807244e0, type: 2}
+    level: 27
+  - moveBase: {fileID: 11400000, guid: b1dfd1db887152d43a4ba92979080a87, type: 2}
+    level: 6
+  - moveBase: {fileID: 11400000, guid: 87f45cf2d53bf6f42867db97e48b9910, type: 2}
+    level: 31
+  - moveBase: {fileID: 11400000, guid: 8773720b061af4e4f97b9d849ab2d877, type: 2}
+    level: 38
+  - moveBase: {fileID: 11400000, guid: e860d7834d9ec0e4f82c43468697797a, type: 2}
+    level: 17

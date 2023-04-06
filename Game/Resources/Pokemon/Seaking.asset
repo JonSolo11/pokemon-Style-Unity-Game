@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77586b9c49eccb243ad5d4fb64303e2c, type: 3}
+  m_Name: Seaking
+  m_EditorClassIdentifier: 
+  pokemonName: Seaking
+  description: In the autumn spawning season, they can be seen swimming powerfully
+    up rivers and creeks.
+  frontSprite: {fileID: 21300000, guid: 3fbdee2fbd5799d4589926e22d4724c8, type: 3}
+  backSprite: {fileID: 21300000, guid: 9b61246a1ad592347abd244fce73c1b1, type: 3}
+  type1: 3
+  type2: 0
+  maxHP: 80
+  attack: 92
+  defense: 65
+  spAttack: 65
+  spDefense: 80
+  speed: 68
+  LearnableMove:
+  - moveBase: {fileID: 11400000, guid: 6725d8c9ea63c5a4d9b79b689689e35d, type: 2}
+    level: 24
+  - moveBase: {fileID: 11400000, guid: ba320070b14934c45acc4c1636316d57, type: 2}
+    level: 30
+  - moveBase: {fileID: 11400000, guid: b3e7def5fbda68249939dc9d109f72e4, type: 2}
+    level: 48
+  - moveBase: {fileID: 11400000, guid: 920f56fdfa577e848b38338dc85b498f, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 3e21c656416b7284ca04ef9477f7acd1, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 1239021ea49bd8644a510f29684ad454, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: b5b42387e4c87d64a9ea063ec10381b3, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 1b9c735f59d4d1947a74d01e807244e0, type: 2}
+    level: 54
+  - moveBase: {fileID: 11400000, guid: d681c84c7bcb6b1418d94c90aa19c68d, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: b9ea7b46177ac3f4089b91540f51ee6f, type: 2}
+    level: 39

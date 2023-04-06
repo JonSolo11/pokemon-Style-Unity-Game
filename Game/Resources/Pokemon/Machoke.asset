@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77586b9c49eccb243ad5d4fb64303e2c, type: 3}
+  m_Name: Machoke
+  m_EditorClassIdentifier: 
+  pokemonName: Machoke
+  description: "Its muscular body is so powerful, it must wear a power\fsave belt
+    to be able to regulate its motions."
+  frontSprite: {fileID: 21300000, guid: 113bc45fde3dea2499acd584ced30685, type: 3}
+  backSprite: {fileID: 21300000, guid: 6e037ae9c025eea4d9489f8be7cdde90, type: 3}
+  type1: 7
+  type2: 0
+  maxHP: 80
+  attack: 100
+  defense: 70
+  spAttack: 50
+  spDefense: 60
+  speed: 45
+  LearnableMove:
+  - moveBase: {fileID: 11400000, guid: b8ad25fc61c863840aa796ab85eb2056, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 4fa0483f751b6f04eb510de705f42406, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 5fda0d6ba1f13b2498d61ad67dfbe960, type: 2}
+    level: 52
+  - moveBase: {fileID: 11400000, guid: 2b2d6e271596e3840a64aa0648ca60c8, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: c2642361c61a4a949816a68fd162105a, type: 2}
+    level: 44
+  - moveBase: {fileID: 11400000, guid: 828299c98691e204699fc42ef9e0f0e7, type: 2}
+    level: 36

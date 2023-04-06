@@ -12,13 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77586b9c49eccb243ad5d4fb64303e2c, type: 3}
   m_Name: Ivysaur
   m_EditorClassIdentifier: 
-  name: Ivysaur
-  description: "There is a bud on this Pok\xE9mon's back. To support its weight,
-    Ivysaur's legs and trunk grow thick and strong. If it starts spending more time
-    lying in the sunlight, it's a sign that the bud will bloom into a large flower
-    soon.\r"
-  frontSprite: {fileID: -957394138, guid: e0d240745e0241d4e9423fc2e8eee62a, type: 3}
-  backSprite: {fileID: 1472828286, guid: 6e1a351c3dbed914394e24f9ba233014, type: 3}
+  pokemonName: Ivysaur
+  description: "When the bulb on its back grows large, it appears\fto lose the ability
+    to stand on its hind legs."
+  frontSprite: {fileID: 21300000, guid: 6dcce57e654e9a642a4998419e48da90, type: 3}
+  backSprite: {fileID: 21300000, guid: d13402262bc8000449c6db5255eb8d39, type: 3}
   type1: 5
   type2: 8
   maxHP: 60
@@ -28,21 +26,21 @@ MonoBehaviour:
   spDefense: 80
   speed: 60
   LearnableMove:
-  - moveBase: {fileID: 11400000, guid: 7e8507ef486e86247a982a0f784b1e38, type: 2}
-    level: 1
-  - moveBase: {fileID: 11400000, guid: 5d27d8d96ced1a44a93e4f6f965dac35, type: 2}
-    level: 1
-  - moveBase: {fileID: 11400000, guid: 83076643694ec5a41a369aaba30501da, type: 2}
-    level: 1
-  - moveBase: {fileID: 11400000, guid: 4f9d9f4b5db272041bd9f88280a39495, type: 2}
+  - moveBase: {fileID: 11400000, guid: ca943c5ab914c9b44987a88b30270402, type: 2}
     level: 13
-  - moveBase: {fileID: 11400000, guid: 0a1f5d8d6e5fc7643b4917184a50656d, type: 2}
-    level: 22
-  - moveBase: {fileID: 11400000, guid: 44fb45ea7f59f3c4b98dfffa1b5405fa, type: 2}
-    level: 30
-  - moveBase: {fileID: 11400000, guid: 57dc4239ca09e1349a8b52d3927c487e, type: 2}
+  - moveBase: {fileID: 11400000, guid: a1e2587217b91a841b27d37ca791c92f, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 08bb87a5680b4d5468c5304adde44ec8, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 35f493c5cb984124fbf6cf23d3fc046f, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 16f5ea516f4fbae4f8bc599ffa470e3c, type: 2}
     level: 38
-  - moveBase: {fileID: 11400000, guid: a2b80877519cff349b6a48c98772d669, type: 2}
-    level: 46
-  - moveBase: {fileID: 11400000, guid: 51bfa0e4a82713540890a9ed589935c6, type: 2}
+  - moveBase: {fileID: 11400000, guid: 88dead587acc3cf4d81d7f2a4a509e72, type: 2}
+    level: 30
+  - moveBase: {fileID: 11400000, guid: cf2749b8670a08441ab6d6ad1b0f9c1b, type: 2}
     level: 54
+  - moveBase: {fileID: 11400000, guid: e09c1e539e810fd4199752a31b8305b7, type: 2}
+    level: 22
+  - moveBase: {fileID: 11400000, guid: 4c99e7af04b316840a413ace9f6c49ab, type: 2}
+    level: 46

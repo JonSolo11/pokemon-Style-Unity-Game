@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77586b9c49eccb243ad5d4fb64303e2c, type: 3}
+  m_Name: Primeape
+  m_EditorClassIdentifier: 
+  pokemonName: Primeape
+  description: "Always furious and tenacious to boot. It will not\fabandon chasing
+    its quarry until it is caught."
+  frontSprite: {fileID: 21300000, guid: 4eb13a954ffc644428af383a3bad331c, type: 3}
+  backSprite: {fileID: 21300000, guid: 40a3b8b074dbc6c4cb9831e4d213b540, type: 3}
+  type1: 7
+  type2: 0
+  maxHP: 65
+  attack: 105
+  defense: 60
+  spAttack: 60
+  spDefense: 70
+  speed: 95
+  LearnableMove:
+  - moveBase: {fileID: 11400000, guid: b8ad25fc61c863840aa796ab85eb2056, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 1ed275ebb3633e542ab1d5248e1a8a6c, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 0260c772371f42942bc01c83a03afb6c, type: 2}
+    level: 46
+  - moveBase: {fileID: 11400000, guid: 4fa0483f751b6f04eb510de705f42406, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 2b2d6e271596e3840a64aa0648ca60c8, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: c2642361c61a4a949816a68fd162105a, type: 2}
+    level: 37
+  - moveBase: {fileID: 11400000, guid: 8ffde40b1b4d6da4288a4acf7e97f09e, type: 2}
+    level: 45
+  - moveBase: {fileID: 11400000, guid: 828299c98691e204699fc42ef9e0f0e7, type: 2}
+    level: 27
+  - moveBase: {fileID: 11400000, guid: 8773720b061af4e4f97b9d849ab2d877, type: 2}
+    level: 1

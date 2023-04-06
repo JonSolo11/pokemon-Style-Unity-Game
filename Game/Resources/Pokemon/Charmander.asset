@@ -12,12 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77586b9c49eccb243ad5d4fb64303e2c, type: 3}
   m_Name: Charmander
   m_EditorClassIdentifier: 
-  name: Charmander
-  description: "The flame that burns at the tip of its tail is an indication of its
-    emotions. The flame wavers when Charmander is enjoying itself. If the Pok\xE9mon
-    becomes enraged, the flame burns fiercely."
-  frontSprite: {fileID: 239636005, guid: e0d240745e0241d4e9423fc2e8eee62a, type: 3}
-  backSprite: {fileID: -960007434, guid: 6e1a351c3dbed914394e24f9ba233014, type: 3}
+  pokemonName: Charmander
+  description: "Obviously prefers hot places. When it rains, steam\fis said to spout
+    from the tip of its tail."
+  frontSprite: {fileID: 21300000, guid: dac5a8d02abd65b4fa5c7a07beaa9be7, type: 3}
+  backSprite: {fileID: 21300000, guid: e6c18cbdd577cbb4286dca339dff36e0, type: 3}
   type1: 2
   type2: 0
   maxHP: 39
@@ -27,19 +26,23 @@ MonoBehaviour:
   spDefense: 50
   speed: 65
   LearnableMove:
-  - moveBase: {fileID: 11400000, guid: 0dd01ef2705e79149ae6b924b6ecafde, type: 2}
+  - moveBase: {fileID: 11400000, guid: 1ed275ebb3633e542ab1d5248e1a8a6c, type: 2}
     level: 1
-  - moveBase: {fileID: 11400000, guid: 5d27d8d96ced1a44a93e4f6f965dac35, type: 2}
-    level: 4
-  - moveBase: {fileID: 11400000, guid: 2c73102844dff3845b70c55cce778436, type: 2}
-    level: 9
-  - moveBase: {fileID: 11400000, guid: fecd23324ea47694bbeadd70a81e5f64, type: 2}
+  - moveBase: {fileID: 11400000, guid: 4fa0483f751b6f04eb510de705f42406, type: 2}
     level: 15
-  - moveBase: {fileID: 11400000, guid: 7e87350e48f749845887c861d1a0e447, type: 2}
-    level: 22
-  - moveBase: {fileID: 11400000, guid: 910521803d287a8499bb483149084370, type: 2}
-    level: 30
-  - moveBase: {fileID: 11400000, guid: 966a1261881c1d04381788010e412cc6, type: 2}
+  - moveBase: {fileID: 11400000, guid: 08bb87a5680b4d5468c5304adde44ec8, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: e1f8378a95a0ead45a645ab878dda05e, type: 2}
+    level: 9
+  - moveBase: {fileID: 11400000, guid: cf90737c2b11b7b4b8be8a6deca120f4, type: 2}
     level: 38
-  - moveBase: {fileID: 11400000, guid: 7bd1d5a2cdba9154d81ad2fc5a2e8086, type: 2}
+  - moveBase: {fileID: 11400000, guid: 9783b2e8db314fc45a01797a6f400b11, type: 2}
     level: 46
+  - moveBase: {fileID: 11400000, guid: c362241983e864d45979c2e2bc5f5a36, type: 2}
+    level: 22
+  - moveBase: {fileID: 11400000, guid: 86ff0e0b84fab284c94d769e1b84a163, type: 2}
+    level: 13
+  - moveBase: {fileID: 11400000, guid: 8773720b061af4e4f97b9d849ab2d877, type: 2}
+    level: 18
+  - moveBase: {fileID: 11400000, guid: e860d7834d9ec0e4f82c43468697797a, type: 2}
+    level: 30

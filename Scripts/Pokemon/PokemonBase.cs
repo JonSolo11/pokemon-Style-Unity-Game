@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class PokemonBase : ScriptableObject
 {
-    [SerializeField] public string name;
+    [SerializeField] public string pokemonName;
 
     [TextArea]
     [SerializeField] public string description;
@@ -26,6 +26,7 @@ public class PokemonBase : ScriptableObject
     [SerializeField] public int speed;
 
     [SerializeField] public List<LearnableMove> LearnableMove;
+    
 
     public string Name{
         get {return name;}
@@ -68,6 +69,10 @@ public class PokemonBase : ScriptableObject
     public List<LearnableMove> LearnableMoves{
         get {return LearnableMove;}
     }
+    public PokemonBase()
+    {
+        LearnableMove = new List<LearnableMove>();
+    }
 }
 
 [System.Serializable]
@@ -76,13 +81,22 @@ public class LearnableMove
     [SerializeField] public MoveBase moveBase;
     [SerializeField] public int level;
 
-    public MoveBase Base{
-        get {return moveBase;}
+    public MoveBase Base
+    {
+        get { return moveBase; }
     }
-    public int Level{
-        get {return level;}
+    public int Level
+    {
+        get { return level; }
+    }
+
+    public LearnableMove(MoveBase moveBase, int level)
+    {
+        this.moveBase = moveBase;
+        this.level = level;
     }
 }
+
 
 public enum PokemonType
 {
@@ -151,4 +165,5 @@ public class TypeChart
 
         return chart[row][col];
     }
+    
 }

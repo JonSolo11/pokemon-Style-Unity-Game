@@ -12,26 +12,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77586b9c49eccb243ad5d4fb64303e2c, type: 3}
   m_Name: Butterfree
   m_EditorClassIdentifier: 
-  name: Butterfree
-  description: "\tButterfree has a superior ability to search for delicious honey
-    from flowers. It can even search out, extract, and carry honey from flowers that
-    are blooming over six miles from its nest."
-  frontSprite: {fileID: 629615841, guid: e0d240745e0241d4e9423fc2e8eee62a, type: 3}
-  backSprite: {fileID: 351960630, guid: 6e1a351c3dbed914394e24f9ba233014, type: 3}
-  type1: 0
-  type2: 0
+  pokemonName: Butterfree
+  description: "In battle, it flaps its wings at high speed to\frelease highly toxic
+    dust into the air."
+  frontSprite: {fileID: 21300000, guid: b6ed0b956de0a484383ab4c81dbb9eb7, type: 3}
+  backSprite: {fileID: 21300000, guid: 3fdade8a858b8024ca2e8732b718a19a, type: 3}
+  type1: 12
+  type2: 10
   maxHP: 60
   attack: 45
   defense: 50
-  spAttack: 80
+  spAttack: 90
   spDefense: 80
   speed: 70
   LearnableMove:
-  - moveBase: {fileID: 11400000, guid: 79ae94079ec85584fbbe1f51397ecfa8, type: 2}
-    level: 13
-  - moveBase: {fileID: 11400000, guid: 0a1f5d8d6e5fc7643b4917184a50656d, type: 2}
-    level: 14
-  - moveBase: {fileID: 11400000, guid: 9de9b0f2fa7e9ef4b8f812da0ab14618, type: 2}
+  - moveBase: {fileID: 11400000, guid: e247ef52c58d9d14c9e8b56ceddc4071, type: 2}
+    level: 28
+  - moveBase: {fileID: 11400000, guid: 2b62a6b3a885bc94ea56a2f72444a63c, type: 2}
+    level: 26
+  - moveBase: {fileID: 11400000, guid: a1e2587217b91a841b27d37ca791c92f, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 3e21c656416b7284ca04ef9477f7acd1, type: 2}
+    level: 21
+  - moveBase: {fileID: 11400000, guid: 1239021ea49bd8644a510f29684ad454, type: 2}
+    level: 32
+  - moveBase: {fileID: 11400000, guid: e09c1e539e810fd4199752a31b8305b7, type: 2}
     level: 15
-  - moveBase: {fileID: 11400000, guid: 5d27d8d96ced1a44a93e4f6f965dac35, type: 2}
-    level: 15
+  - moveBase: {fileID: 11400000, guid: 7ede8559d1fca364694a031c051e729e, type: 2}
+    level: 16
+  - moveBase: {fileID: 11400000, guid: 4c99e7af04b316840a413ace9f6c49ab, type: 2}
+    level: 17
+  - moveBase: {fileID: 11400000, guid: 2b625999442f1644c98f10e475e41e3d, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: feb4ee5695aabcc4d97839f90626bd30, type: 2}
+    level: 1

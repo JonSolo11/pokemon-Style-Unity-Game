@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77586b9c49eccb243ad5d4fb64303e2c, type: 3}
+  m_Name: Pidgey
+  m_EditorClassIdentifier: 
+  pokemonName: Pidgey
+  description: "A common sight in forests and woods. It flaps its\fwings at ground
+    level to kick up blinding sand."
+  frontSprite: {fileID: 21300000, guid: 24849f8cf16e1db46be2b37a21535619, type: 3}
+  backSprite: {fileID: 21300000, guid: 40c0c9dd225f9df45b08d8d38ac6ac5f, type: 3}
+  type1: 1
+  type2: 10
+  maxHP: 40
+  attack: 45
+  defense: 40
+  spAttack: 35
+  spDefense: 35
+  speed: 56
+  LearnableMove:
+  - moveBase: {fileID: 11400000, guid: e247ef52c58d9d14c9e8b56ceddc4071, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: dc3f29dd60ce08449bf0ac9cf7588dbb, type: 2}
+    level: 28
+  - moveBase: {fileID: 11400000, guid: 2b62a6b3a885bc94ea56a2f72444a63c, type: 2}
+    level: 19
+  - moveBase: {fileID: 11400000, guid: c6bd009ef920ab04b88d4835172ae404, type: 2}
+    level: 5
+  - moveBase: {fileID: 11400000, guid: a1e2587217b91a841b27d37ca791c92f, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 1b9c735f59d4d1947a74d01e807244e0, type: 2}
+    level: 36
+  - moveBase: {fileID: 11400000, guid: d681c84c7bcb6b1418d94c90aa19c68d, type: 2}
+    level: 12
+  - moveBase: {fileID: 11400000, guid: 31919ba83c9b8444eac75ae2ccf0e6ef, type: 2}
+    level: 44

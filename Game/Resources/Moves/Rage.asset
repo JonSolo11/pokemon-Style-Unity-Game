@@ -13,9 +13,22 @@ MonoBehaviour:
   m_Name: Rage
   m_EditorClassIdentifier: 
   name: Rage
-  description: As long as this move is in use, the power of rage raises the Attack
-    stat each time the user is hit in battle.
+  description: Raises ATTACK if the user is hit.
   type: 1
   power: 20
   accuracy: 100
+  alwaysHits: 0
   pp: 20
+  priority: 0
+  category: 0
+  effects:
+    boosts: []
+    status: 0
+    volatileStatus: 0
+  secondaries:
+  - boosts: []
+    status: 0
+    volatileStatus: 0
+    chance: 0
+    target: 0
+  target: 0

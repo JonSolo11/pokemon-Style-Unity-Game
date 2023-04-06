@@ -12,14 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f151016a5271a99499f3f917395e7685, type: 3}
   m_Name: Flamethrower
   m_EditorClassIdentifier: 
-  name: 
-  description: The foe is scorched with an intense blast of fire. The target may
-    also be left with a burn.
+  name: Flamethrower
+  description: An attack that may inflict a burn.
   type: 2
-  power: 95
+  power: 90
   accuracy: 100
+  alwaysHits: 0
   pp: 15
+  priority: 0
   category: 1
   effects:
     boosts: []
+    status: 2
+    volatileStatus: 0
+  secondaries:
+  - boosts: []
+    status: 2
+    volatileStatus: 0
+    chance: 10
+    target: 0
   target: 0

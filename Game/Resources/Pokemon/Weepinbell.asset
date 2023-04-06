@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77586b9c49eccb243ad5d4fb64303e2c, type: 3}
+  m_Name: Weepinbell
+  m_EditorClassIdentifier: 
+  pokemonName: Weepinbell
+  description: "It spits out POISONPOWDER to immobilize the\fenemy and then finishes
+    it with a spray of ACID."
+  frontSprite: {fileID: 21300000, guid: 2c84bff8e06329d4ca49c1d67fd74a99, type: 3}
+  backSprite: {fileID: 21300000, guid: 0b37b50f717be8d45a386238974f0aae, type: 3}
+  type1: 5
+  type2: 8
+  maxHP: 65
+  attack: 90
+  defense: 50
+  spAttack: 85
+  spDefense: 45
+  speed: 55
+  LearnableMove:
+  - moveBase: {fileID: 11400000, guid: 54a9be60939ba7146bcde34d275d78ff, type: 2}
+    level: 49
+  - moveBase: {fileID: 11400000, guid: ca943c5ab914c9b44987a88b30270402, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 6a5dcb28a855efe45b36895097b8334d, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 247f4aa23e4e02249b9a7872f1ac5cff, type: 2}
+    level: 29
+  - moveBase: {fileID: 11400000, guid: 16f5ea516f4fbae4f8bc599ffa470e3c, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 88dead587acc3cf4d81d7f2a4a509e72, type: 2}
+    level: 38
+  - moveBase: {fileID: 11400000, guid: e09c1e539e810fd4199752a31b8305b7, type: 2}
+    level: 15
+  - moveBase: {fileID: 11400000, guid: 7ede8559d1fca364694a031c051e729e, type: 2}
+    level: 23
+  - moveBase: {fileID: 11400000, guid: 4c99e7af04b316840a413ace9f6c49ab, type: 2}
+    level: 18

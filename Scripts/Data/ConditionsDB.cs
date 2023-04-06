@@ -15,13 +15,24 @@ public class ConditionsDB
         }
     }
 
+    public static Dictionary<string, ConditionID> ailmentNameToID = new Dictionary<string, ConditionID>()
+    {
+        { "poison", ConditionID.psn },
+        { "burn", ConditionID.brn },
+        { "paralysis", ConditionID.par },
+        { "freeze", ConditionID.frz },
+        { "sleep", ConditionID.slp },
+        { "confusion", ConditionID.confusion }
+    };
+
+
    public static Dictionary<ConditionID, Condition> Conditions {get; set;} = new Dictionary<ConditionID, Condition>()
    {
         {
             ConditionID.psn,
             new Condition()
             {
-                Name = "Poison",
+                Name = "poison",
                 StartMessage = "is poisoned!",
                 OnAfterTurn = (Pokemon pokemon) => 
                 {
@@ -34,7 +45,7 @@ public class ConditionsDB
             ConditionID.brn,
             new Condition()
             {
-                Name = "Burn",
+                Name = "burn",
                 StartMessage = "is burned!",
                 OnAfterTurn = (Pokemon pokemon) => 
                 {
@@ -48,7 +59,7 @@ public class ConditionsDB
             ConditionID.par,
             new Condition()
             {
-                Name = "Paralyzed",
+                Name = "paralyzed",
                 StartMessage = "is paralyzed!",
                 OnBeforeMove = (Pokemon pokemon) =>
                 {
@@ -66,7 +77,7 @@ public class ConditionsDB
             ConditionID.frz,
             new Condition()
             {
-                Name = "Freeze",
+                Name = "freeze",
                 StartMessage = "is Frozen Solid!",
                 OnBeforeMove = (Pokemon pokemon) =>
                 {
@@ -86,7 +97,7 @@ public class ConditionsDB
             ConditionID.slp,
             new Condition()
             {
-                Name = "Sleep",
+                Name = "sleep",
                 StartMessage = "Fell Asleep",
                 OnStart = (Pokemon pokemon) =>
                 {
@@ -115,7 +126,7 @@ public class ConditionsDB
             ConditionID.confusion,
             new Condition()
             {
-                Name = "Confusion",
+                Name = "confusion",
                 StartMessage = "is Confused",
                 OnStart = (Pokemon pokemon) =>
                 {

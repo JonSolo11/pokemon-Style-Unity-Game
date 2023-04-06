@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77586b9c49eccb243ad5d4fb64303e2c, type: 3}
+  m_Name: Pinsir
+  m_EditorClassIdentifier: 
+  pokemonName: Pinsir
+  description: "If it fails to crush the victim in its pincers,\fit will swing it
+    around and toss it hard."
+  frontSprite: {fileID: 21300000, guid: 71cfca5d908cbea4885c638ee1ac3265, type: 3}
+  backSprite: {fileID: 21300000, guid: df28dad9794946446b96f3d48b04b04d, type: 3}
+  type1: 12
+  type2: 0
+  maxHP: 65
+  attack: 125
+  defense: 100
+  spAttack: 55
+  spDefense: 70
+  speed: 85
+  LearnableMove:
+  - moveBase: {fileID: 11400000, guid: 73ec3925b5f50d7499fe5716e9725dfa, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 350f5a638c455864a9d3823da775658c, type: 2}
+    level: 30
+  - moveBase: {fileID: 11400000, guid: 6053e46ce27a4614f9ac7c3552c157eb, type: 2}
+    level: 54
+  - moveBase: {fileID: 11400000, guid: e5dfc9a2441143a47a8d74c1c5ce9bef, type: 2}
+    level: 21
+  - moveBase: {fileID: 11400000, guid: 0260c772371f42942bc01c83a03afb6c, type: 2}
+    level: 35
+  - moveBase: {fileID: 11400000, guid: c2642361c61a4a949816a68fd162105a, type: 2}
+    level: 25
+  - moveBase: {fileID: 11400000, guid: feb4ee5695aabcc4d97839f90626bd30, type: 2}
+    level: 43
+  - moveBase: {fileID: 11400000, guid: 828299c98691e204699fc42ef9e0f0e7, type: 2}
+    level: 36
+  - moveBase: {fileID: 11400000, guid: e860d7834d9ec0e4f82c43468697797a, type: 2}
+    level: 49

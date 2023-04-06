@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77586b9c49eccb243ad5d4fb64303e2c, type: 3}
+  m_Name: Alakazam
+  m_EditorClassIdentifier: 
+  pokemonName: Alakazam
+  description: "Its brain can out\xAD perform a super\xAD computer.\fIts intelligence
+    quotient is said to be 5,000."
+  frontSprite: {fileID: 21300000, guid: 7d009eb811f7f4a4692fc25f4551cda8, type: 3}
+  backSprite: {fileID: 21300000, guid: f44d15551f1adef449e18a94eec77062, type: 3}
+  type1: 11
+  type2: 0
+  maxHP: 55
+  attack: 50
+  defense: 45
+  spAttack: 135
+  spDefense: 95
+  speed: 120
+  LearnableMove:
+  - moveBase: {fileID: 11400000, guid: 0bf41781e15dc9f48929b860466c1e5e, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 1239021ea49bd8644a510f29684ad454, type: 2}
+    level: 27
+  - moveBase: {fileID: 11400000, guid: 2b625999442f1644c98f10e475e41e3d, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 17ffa946d70b1c24b99117c9611aa7f6, type: 2}
+    level: 38
+  - moveBase: {fileID: 11400000, guid: fea39d93585a32e499e899ea52cea15c, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: c41aea889850fa8449d2257d717ecb0d, type: 2}
+    level: 19
+  - moveBase: {fileID: 11400000, guid: c44c9490ecf47fd4496bf5e71d634ed9, type: 2}
+    level: 31
+  - moveBase: {fileID: 11400000, guid: cfe9f5c85a2a3de4f8760794ab743145, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: d60778eefab922444a4a953899d6c632, type: 2}
+    level: 42
+  - moveBase: {fileID: 11400000, guid: 3e4a192273aff6d41b5ba4e2751a7dcf, type: 2}
+    level: 1

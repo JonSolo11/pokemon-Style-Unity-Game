@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77586b9c49eccb243ad5d4fb64303e2c, type: 3}
+  m_Name: Spearow
+  m_EditorClassIdentifier: 
+  pokemonName: Spearow
+  description: It flaps its small wings busily to fly. Using its beak, it searches
+    in grass for prey.
+  frontSprite: {fileID: 21300000, guid: 0a61175826c6f2842ac615caac33a091, type: 3}
+  backSprite: {fileID: 21300000, guid: a3ac985df61402249bbc59108aa54be2, type: 3}
+  type1: 1
+  type2: 10
+  maxHP: 40
+  attack: 60
+  defense: 30
+  spAttack: 31
+  spDefense: 31
+  speed: 70
+  LearnableMove:
+  - moveBase: {fileID: 11400000, guid: ba320070b14934c45acc4c1636316d57, type: 2}
+    level: 15
+  - moveBase: {fileID: 11400000, guid: 4fa0483f751b6f04eb510de705f42406, type: 2}
+    level: 9
+  - moveBase: {fileID: 11400000, guid: 08bb87a5680b4d5468c5304adde44ec8, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: b5b42387e4c87d64a9ea063ec10381b3, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 949856019591e874e9d5505b37bf5b42, type: 2}
+    level: 29
+  - moveBase: {fileID: 11400000, guid: 1b9c735f59d4d1947a74d01e807244e0, type: 2}
+    level: 36
+  - moveBase: {fileID: 11400000, guid: 828299c98691e204699fc42ef9e0f0e7, type: 2}
+    level: 29
+  - moveBase: {fileID: 11400000, guid: 31919ba83c9b8444eac75ae2ccf0e6ef, type: 2}
+    level: 22

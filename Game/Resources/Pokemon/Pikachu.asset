@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77586b9c49eccb243ad5d4fb64303e2c, type: 3}
+  m_Name: Pikachu
+  m_EditorClassIdentifier: 
+  pokemonName: Pikachu
+  description: "When several of these POK\xE9MON gather, their\felectricity could
+    build and cause lightning storms."
+  frontSprite: {fileID: 21300000, guid: b92c3c660bdd536418e51d2cd0880cf7, type: 3}
+  backSprite: {fileID: 21300000, guid: d6d6ca87eb77b954d966ba3b1c896607, type: 3}
+  type1: 4
+  type2: 0
+  maxHP: 35
+  attack: 55
+  defense: 40
+  spAttack: 50
+  spDefense: 50
+  speed: 90
+  LearnableMove:
+  - moveBase: {fileID: 11400000, guid: 54a9be60939ba7146bcde34d275d78ff, type: 2}
+    level: 20
+  - moveBase: {fileID: 11400000, guid: 76879ecffb283ff469b351d8d314d8eb, type: 2}
+    level: 9
+  - moveBase: {fileID: 11400000, guid: 920f56fdfa577e848b38338dc85b498f, type: 2}
+    level: 6
+  - moveBase: {fileID: 11400000, guid: 08bb87a5680b4d5468c5304adde44ec8, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 6d0467ca2e742f74095458ea3a4be682, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 91deaa2a801bf5d43b7d17720e2e6dea, type: 2}
+    level: 9
+  - moveBase: {fileID: 11400000, guid: 01726369e49d20645b22daad523d0593, type: 2}
+    level: 43
+  - moveBase: {fileID: 11400000, guid: 1b9c735f59d4d1947a74d01e807244e0, type: 2}
+    level: 33
+  - moveBase: {fileID: 11400000, guid: d681c84c7bcb6b1418d94c90aa19c68d, type: 2}
+    level: 16
+  - moveBase: {fileID: 11400000, guid: c14cdc96ea43d4444948abf4dabc731d, type: 2}
+    level: 50
+  - moveBase: {fileID: 11400000, guid: 87f45cf2d53bf6f42867db97e48b9910, type: 2}
+    level: 26

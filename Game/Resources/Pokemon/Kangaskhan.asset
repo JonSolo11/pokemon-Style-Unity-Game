@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77586b9c49eccb243ad5d4fb64303e2c, type: 3}
+  m_Name: Kangaskhan
+  m_EditorClassIdentifier: 
+  pokemonName: Kangaskhan
+  description: "The infant rarely ventures out of its mother's\fprotective pouch
+    until it is 3 years old."
+  frontSprite: {fileID: 21300000, guid: 2c8ba3d36a784fc48a5e89bf99e6aac7, type: 3}
+  backSprite: {fileID: 21300000, guid: 78f34a41fd0835d48a1aa65e2091538a, type: 3}
+  type1: 1
+  type2: 0
+  maxHP: 105
+  attack: 95
+  defense: 80
+  spAttack: 40
+  spDefense: 80
+  speed: 90
+  LearnableMove:
+  - moveBase: {fileID: 11400000, guid: ec11632b682ac834a8bf7e0ed83c85a5, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 3f365060be1c1c64db486c7d8eef2a60, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 0c4b6fc2cc190a4438420bd1f2ef3a50, type: 2}
+    level: 36
+  - moveBase: {fileID: 11400000, guid: 920f56fdfa577e848b38338dc85b498f, type: 2}
+    level: 31
+  - moveBase: {fileID: 11400000, guid: 4fa0483f751b6f04eb510de705f42406, type: 2}
+    level: 41
+  - moveBase: {fileID: 11400000, guid: 7f4e0945b31a04140b1a65bc5c71396f, type: 2}
+    level: 26
+  - moveBase: {fileID: 11400000, guid: 08bb87a5680b4d5468c5304adde44ec8, type: 2}
+    level: 4
+  - moveBase: {fileID: 11400000, guid: c362241983e864d45979c2e2bc5f5a36, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 67d15c55aed874c49998529a6f1557b9, type: 2}
+    level: 46

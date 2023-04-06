@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77586b9c49eccb243ad5d4fb64303e2c, type: 3}
+  m_Name: Slowbro
+  m_EditorClassIdentifier: 
+  pokemonName: Slowbro
+  description: "The SHELLDER that is latched onto SLOWPOKE's tail\fis said to feed
+    on the host's left over scraps."
+  frontSprite: {fileID: 21300000, guid: f2e7489c74c50df4ea6ffafaf83103c1, type: 3}
+  backSprite: {fileID: 21300000, guid: 816e8e8e949503d4c81534aeb1b1a9fe, type: 3}
+  type1: 3
+  type2: 11
+  maxHP: 95
+  attack: 75
+  defense: 110
+  spAttack: 100
+  spDefense: 80
+  speed: 30
+  LearnableMove:
+  - moveBase: {fileID: 11400000, guid: ad4d2f71f41cdd542bdb126e45d93aa2, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: a78dd826786796643bc29311c73bddfc, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: a1e2587217b91a841b27d37ca791c92f, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 08bb87a5680b4d5468c5304adde44ec8, type: 2}
+    level: 27
+  - moveBase: {fileID: 11400000, guid: 0bf41781e15dc9f48929b860466c1e5e, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 04425952f35537947b9a42f612e8c84d, type: 2}
+    level: 33
+  - moveBase: {fileID: 11400000, guid: 2b625999442f1644c98f10e475e41e3d, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 17ffa946d70b1c24b99117c9611aa7f6, type: 2}
+    level: 55
+  - moveBase: {fileID: 11400000, guid: 987f539aa328dd54e8677e04f79772e1, type: 2}
+    level: 37
+  - moveBase: {fileID: 11400000, guid: 30f9a03243f20434c8fc2363046c66b4, type: 2}
+    level: 44

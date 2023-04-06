@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77586b9c49eccb243ad5d4fb64303e2c, type: 3}
+  m_Name: Mewtwo
+  m_EditorClassIdentifier: 
+  pokemonName: Mewtwo
+  description: "It was created by a scientist after years of horrific\fgene splicing
+    and DNA engineering experiments."
+  frontSprite: {fileID: 21300000, guid: 1a0ea647a8b37b54db7c2dcd11e5d8df, type: 3}
+  backSprite: {fileID: 21300000, guid: 668dbf06aed789e4eb112394db8a0f08, type: 3}
+  type1: 11
+  type2: 0
+  maxHP: 106
+  attack: 110
+  defense: 90
+  spAttack: 154
+  spDefense: 90
+  speed: 130
+  LearnableMove:
+  - moveBase: {fileID: 11400000, guid: 0bf41781e15dc9f48929b860466c1e5e, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 28f4d33bd0690dd498d025ef92951dd1, type: 2}
+    level: 75
+  - moveBase: {fileID: 11400000, guid: 1239021ea49bd8644a510f29684ad454, type: 2}
+    level: 22
+  - moveBase: {fileID: 11400000, guid: 2b625999442f1644c98f10e475e41e3d, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 17ffa946d70b1c24b99117c9611aa7f6, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 1b9c735f59d4d1947a74d01e807244e0, type: 2}
+    level: 88
+  - moveBase: {fileID: 11400000, guid: c44c9490ecf47fd4496bf5e71d634ed9, type: 2}
+    level: 70
+  - moveBase: {fileID: 11400000, guid: 07abc203bcf2de84c895ca631654c159, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: cfe9f5c85a2a3de4f8760794ab743145, type: 2}
+    level: 63
+  - moveBase: {fileID: 11400000, guid: 87f45cf2d53bf6f42867db97e48b9910, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 30f9a03243f20434c8fc2363046c66b4, type: 2}
+    level: 81

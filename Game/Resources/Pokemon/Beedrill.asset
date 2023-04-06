@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77586b9c49eccb243ad5d4fb64303e2c, type: 3}
+  m_Name: Beedrill
+  m_EditorClassIdentifier: 
+  pokemonName: Beedrill
+  description: It has three poisonous stingers on its forelegs and its tail. They
+    are used to jab its enemy repeatedly.
+  frontSprite: {fileID: 21300000, guid: 5bfacf5d39c7b55469b16a1bf34eeb8f, type: 3}
+  backSprite: {fileID: 21300000, guid: 5784b8a83d702ea4f819a49d3ad5f6cf, type: 3}
+  type1: 12
+  type2: 8
+  maxHP: 65
+  attack: 90
+  defense: 40
+  spAttack: 45
+  spDefense: 80
+  speed: 75
+  LearnableMove:
+  - moveBase: {fileID: 11400000, guid: ba320070b14934c45acc4c1636316d57, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: baa27770914ed014aad5f9cdce729920, type: 2}
+    level: 20
+  - moveBase: {fileID: 11400000, guid: 7f40bef4f0eef834bb07545bedb9b826, type: 2}
+    level: 30
+  - moveBase: {fileID: 11400000, guid: b5b42387e4c87d64a9ea063ec10381b3, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 1b9c735f59d4d1947a74d01e807244e0, type: 2}
+    level: 35
+  - moveBase: {fileID: 11400000, guid: c362241983e864d45979c2e2bc5f5a36, type: 2}
+    level: 25
+  - moveBase: {fileID: 11400000, guid: 828299c98691e204699fc42ef9e0f0e7, type: 2}
+    level: 16

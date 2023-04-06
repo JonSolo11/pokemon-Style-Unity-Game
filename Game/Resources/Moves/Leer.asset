@@ -13,15 +13,24 @@ MonoBehaviour:
   m_Name: Leer
   m_EditorClassIdentifier: 
   name: Leer
-  description: "\tThe opposing team gains an intimidating leer with sharp eyes. The
-    opposing team's Defense stats are reduced."
+  description: Reduces the foe's DEFENSE.
   type: 1
   power: 0
   accuracy: 100
+  alwaysHits: 0
   pp: 30
+  priority: 0
   category: 2
   effects:
     boosts:
     - stat: 1
       boost: -1
+    status: 0
+    volatileStatus: 0
+  secondaries:
+  - boosts: []
+    status: 0
+    volatileStatus: 0
+    chance: 0
+    target: 0
   target: 0
