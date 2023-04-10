@@ -23,6 +23,14 @@ public class GetPokemon : MonoBehaviour
     public int spAttack;
     public int spDefense;
     public int speed;
+
+    public int expYield;
+
+    public int catchRate;
+
+    public GrowthRate growthRate;
+
+
     [SerializeField] public List<LearnableMove> LearnableMove = new List<LearnableMove>();
 
     private MoveFetcher moveFetcher;
@@ -99,6 +107,7 @@ public class GetPokemon : MonoBehaviour
                     newPokemon.speed = baseStat;
                     break;
             }
+            newPokemon.expYield = response["base_experience"].AsInt;
         }
 
         // Send API request to retrieve Pokemon species data, including description
@@ -126,6 +135,8 @@ public class GetPokemon : MonoBehaviour
                     break;
                 }
             }
+            newPokemon.catchRate = speciesResponse["capture_rate"].AsInt;
+            newPokemon.growthRate = (GrowthRate)System.Enum.Parse(typeof(GrowthRate), ToTitleCase(speciesResponse["growth_rate"]["name"].Value.Replace("-", "")));
         }
 
         // Send API request to retrieve front sprite

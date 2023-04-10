@@ -10,6 +10,14 @@ public class Pokemon
     [SerializeField] PokemonBase _base;
     [SerializeField] int level;
 
+    public Pokemon(PokemonBase pBase, int pLevel)
+    {
+        _base = pBase;
+        level = pLevel;
+
+        Init();
+    }
+
     public PokemonBase Base 
     {
         get {return _base;}
@@ -18,6 +26,8 @@ public class Pokemon
     {
         get {return level;}
     }
+
+    public int Exp{get; set;}
 
     public int HP{get; set;}
 
@@ -33,7 +43,7 @@ public class Pokemon
 
     public int VolatileStatusTime{get; set;}
 
-    public Queue<string> StatusChanges{get; private set;} = new Queue<string>();
+    public Queue<string> StatusChanges{get; private set;}
 
     public bool HpChanged{get; set;}
 
@@ -48,13 +58,17 @@ public class Pokemon
             if (move.Level <= Level){
                 Moves.Add(new Move(move.Base));
             }
-            if(Moves.Count >= 4){
+            if(Moves.Count >= PokemonBase.MaxNumOfMoves){
                 break;
             }
         }
+
+        Exp = Base.GetExpForLevel(Level);
+        
         CalculateStats();
         HP = MaxHP;
 
+        StatusChanges = new Queue<string>();
         ResetStatBoost();
         Status = null;
         VolatileStatus = null;
@@ -122,6 +136,30 @@ public class Pokemon
 
             Debug.Log($"{stat} has been boosted to {StatBoosts[stat]}");
         }
+    }
+
+    public bool CheckForLevelUp()
+    {
+        if(Exp > Base.GetExpForLevel(level + 1))
+        {
+            ++ level;
+            return true;
+        }
+
+        return false;
+    }
+    public LearnableMove GetLearnableMoveAtCurrentLevel()
+    {
+
+        return Base.LearnableMoves.Where(x => x.Level == level).FirstOrDefault();
+    }
+
+    public void LearnMove(LearnableMove moveToLearn)
+    {
+        if (Moves.Count > PokemonBase.MaxNumOfMoves)
+            return;
+
+        Moves.Add(new Move(moveToLearn.Base));
     }
 
     public int Attack{

@@ -67,6 +67,7 @@ public class DialogManager : MonoBehaviour
             dialogText.text += letter;
             yield return new WaitForSeconds(1f/lettersPerSecond);
         }
+        yield return new WaitForSeconds(1f);
         isTyping = false;
     }
 }
