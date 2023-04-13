@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2243020936462048958}
   - component: {fileID: 613463415929724546}
   m_Layer: 0
-  m_Name: OverWorld
+  m_Name: Overworld
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15207,7 +15207,7 @@ TilemapRenderer:
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
---- !u!114 &3070948460365074283
+--- !u!114 &6001825664281592088
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
