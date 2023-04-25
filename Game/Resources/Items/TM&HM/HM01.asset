@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 231280d422683534ea44d16ece6498b4, type: 3}
+  m_Name: HM01
+  m_EditorClassIdentifier: 
+  name: Cut
+  description: Teaches Cut to a Pokemon
+  category: all-machines
+  icon: {fileID: 1116001707, guid: d0d6f210bf6e2b44a82cbc8b27a4511f, type: 3}
+  move: {fileID: 11400000, guid: 8bae57fd91aa98440ae23d17294efc77, type: 2}
+  isHM: 1

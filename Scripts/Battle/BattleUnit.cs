@@ -32,6 +32,11 @@ public class BattleUnit : MonoBehaviour
 
     public void Setup(Pokemon pokemon)
     {
+        Debug.Log($"Pokemon: {pokemon}");
+        Debug.Log($"Pokemon.Base: {pokemon.Base}");
+        Debug.Log($"Pokemon.Base.BackSprite: {pokemon.Base.BackSprite}");
+        Debug.Log($"Pokemon.Base.FrontSprite: {pokemon.Base.FrontSprite}");
+
         Pokemon = pokemon;
         if (isPlayerUnit)
         {

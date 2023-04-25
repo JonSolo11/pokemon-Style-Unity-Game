@@ -6,22 +6,24 @@ using UnityEngine.UI;
 public class BattleDialogueBox : MonoBehaviour
 {
     [SerializeField] int lettersPerSecond;
-    [SerializeField] Color highlightedColor;
-
     [SerializeField] Text dialogueText;
     [SerializeField] GameObject actionSelector;
     [SerializeField] GameObject moveSelector;
     [SerializeField] GameObject moveDetails;
     [SerializeField] GameObject choiceBox;
-
     [SerializeField] List<Text> actionTexts;
     [SerializeField] List<Text> moveTexts;
-
     [SerializeField] Text ppText;
     [SerializeField] Text typeText;
-
     [SerializeField] Text yesText;
     [SerializeField] Text noText;
+
+    Color highlightedColor;
+    
+    private void Start()
+    {
+        highlightedColor = GlobalSettings.i.HighlightedColor;
+    }
     
     public void SetDialogue(string dialogue)
     {

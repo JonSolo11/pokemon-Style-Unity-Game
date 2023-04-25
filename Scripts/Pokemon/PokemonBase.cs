@@ -30,6 +30,7 @@ public class PokemonBase : ScriptableObject
     [SerializeField] public int catchRate = 255;
 
     [SerializeField] public List<LearnableMove> LearnableMove;
+    [SerializeField] public List<MoveBase> LearnableByItems;
 
     public static int MaxNumOfMoves {get; set;} = 4;
 
@@ -133,10 +134,18 @@ public class PokemonBase : ScriptableObject
     public List<LearnableMove> LearnableMoves{
         get {return LearnableMove;}
     }
+
+    public List<MoveBase> learnableByItems
+    {
+        get {return LearnableByItems;}
+    }
+
     public PokemonBase()
     {
         LearnableMove = new List<LearnableMove>();
+        LearnableByItems = new List<MoveBase>();
     }
+
     public int CatchRate{
         get {return catchRate;}
     }
@@ -218,22 +227,25 @@ public class TypeChart
 {
     static float [][] chart = 
     {
-        //                   nor|Fir|wat|ele|grs|ice|fig|poi|grd|fly|psy|bug|roc|gst|drg|
-        /*Nor*/ new float[] { 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f,.5f, 0f, 1f},
-        /*Fir*/ new float[] { 1f,.5f,.5f, 1f, 2f, 2f, 1f, 1f, 1f, 1f, 1f, 2f,.5f, 1f,.5f},
-        /*Wat*/ new float[] { 1f, 2f,.5f, 0f,.5f, 1f, 1f, 1f, 2f, 1f, 1f, 1f, 2f, 1f,.5f},
-        /*Ele*/ new float[] { 1f, 1f, 2f,.5f,.5f, 1f, 1f, 1f, 0f, 2f, 1f, 1f, 1f, 1f,.5f},
-        /*Grs*/ new float[] { 1f,.5f, 2f, 1f,.5f, 1f, 1f,.5f, 2f,.5f, 1f,.5f, 2f, 1f,.5f},
-        /*Ice*/ new float[] { 1f,.5f,.5f, 1f, 2f,.5f, 1f, 1f, 2f, 2f, 1f, 1f, 1f, 1f, 2f},
-        /*Fig*/ new float[] { 2f, 1f, 1f, 1f, 1f, 2f, 1f,.5f, 1f,.5f,.5f,.5f, 2f, 0f, 1f},
-        /*Poi*/ new float[] { 1f, 1f, 1f, 1f, 2f, 1f, 1f,.5f,.5f, 1f, 1f, 1f,.5f,.5f, 1f},
-        /*Grd*/ new float[] { 1f, 2f, 1f, 2f,.5f, 1f, 1f, 2f, 1f, 0f, 1f,.5f, 2f, 1f, 1f},
-        /*Fly*/ new float[] { 1f, 1f, 1f,.5f, 2f, 1f, 2f, 1f, 1f, 1f, 1f, 2f,.5f, 1f, 1f},
-        /*Psy*/ new float[] { 1f, 1f, 1f, 1f, 1f, 1f, 2f, 2f, 1f, 1f,.5f, 1f, 1f, 1f, 1f},
-        /*Bug*/ new float[] { 1f,.5f, 1f, 1f, 2f, 1f,.5f,.5f, 1f,.5f, 2f, 1f, 1f,.5f, 1f},
-        /*Roc*/ new float[] { 1f, 2f, 1f, 1f, 1f, 2f,.5f, 1f,.5f, 2f, 1f, 2f, 1f, 1f, 1f},
-        /*Gst*/ new float[] { 0f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 2f, 1f, 1f, 2f, 1f},
-        /*Drg*/ new float[] { 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 2f},
+        //                   nor|Fir|wat|ele|grs|ice|fig|poi|grd|fly|psy|bug|roc|gst|drg|drk|ste|fai
+        /*Nor*/ new float[] { 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f,.5f, 0f, 1f, 1f,.5f, 1f},
+        /*Fir*/ new float[] { 1f,.5f,.5f, 1f, 2f, 2f, 1f, 1f, 1f, 1f, 1f, 2f,.5f, 1f,.5f, 1f, 2f, 1f},
+        /*Wat*/ new float[] { 1f, 2f,.5f, 0f,.5f, 1f, 1f, 1f, 2f, 1f, 1f, 1f, 2f, 1f,.5f, 1f, 1f, 1f},
+        /*Ele*/ new float[] { 1f, 1f, 2f,.5f,.5f, 1f, 1f, 1f, 0f, 2f, 1f, 1f, 1f, 1f,.5f, 1f, 1f, 1f},
+        /*Grs*/ new float[] { 1f,.5f, 2f, 1f,.5f, 1f, 1f,.5f, 2f,.5f, 1f,.5f, 2f, 1f,.5f, 1f,.5f, 1f},
+        /*Ice*/ new float[] { 1f,.5f,.5f, 1f, 2f,.5f, 1f, 1f, 2f, 2f, 1f, 1f, 1f, 1f, 2f, 1f,.5f, 1f},
+        /*Fig*/ new float[] { 2f, 1f, 1f, 1f, 1f, 2f, 1f,.5f, 1f,.5f,.5f,.5f, 2f, 0f, 1f, 2f, 2f,.5f},
+        /*Poi*/ new float[] { 1f, 1f, 1f, 1f, 2f, 1f, 1f,.5f,.5f, 1f, 1f, 1f,.5f,.5f, 1f, 1f, 0f, 2f},
+        /*Grd*/ new float[] { 1f, 2f, 1f, 2f,.5f, 1f, 1f, 2f, 1f, 0f, 1f,.5f, 2f, 1f, 1f, 1f, 2f, 1f},
+        /*Fly*/ new float[] { 1f, 1f, 1f,.5f, 2f, 1f, 2f, 1f, 1f, 1f, 1f, 2f,.5f, 1f, 1f, 1f,.5f, 1f},
+        /*Psy*/ new float[] { 1f, 1f, 1f, 1f, 1f, 1f, 2f, 2f, 1f, 1f,.5f, 1f, 1f, 1f, 1f, 0f,.5f, 1f},
+        /*Bug*/ new float[] { 1f,.5f, 1f, 1f, 2f, 1f,.5f,.5f, 1f,.5f, 2f, 1f, 1f,.5f, 1f, 2f,.5f,.5f},
+        /*Roc*/ new float[] { 1f, 2f, 1f, 1f, 1f, 2f,.5f, 1f,.5f, 2f, 1f, 2f, 1f, 1f, 1f, 1f,.5f, 1f},
+        /*Gst*/ new float[] { 0f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 2f, 1f, 1f, 2f, 1f,.5f, 1f, 1f},
+        /*Drg*/ new float[] { 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 2f, 1f,.5f, 0f},
+        /*Drk*/ new float[] { 1f, 1f, 1f, 1f, 1f, 1f, 1f,.5f, 1f, 1f, 2f, 1f, 1f, 2f, 1f,.5f, 1f,.5f},
+        /*Ste*/ new float[] { 1f,.5f,.5f,.5f, 1f, 2f, 1f, 1f, 1f, 1f, 1f, 1f, 2f, 1f, 1f, 1f,.5f, 2f},
+        /*Fai*/ new float[] { 1f,.5f, 1f, 1f, 1f, 1f, 2f,.5f, 1f, 1f, 1f, 1f, 1f, 1f, 2f, 2f,.5f, 1f},
     };
 
     public static float GetEffectiveness(PokemonType attackType, PokemonType defenseType)

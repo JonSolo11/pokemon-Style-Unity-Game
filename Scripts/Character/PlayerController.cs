@@ -1,9 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour, ISavable
 {
     [SerializeField] string name;
     [SerializeField] Sprite sprite;
@@ -35,10 +36,10 @@ public class PlayerController : MonoBehaviour
         character.HandleUpdate();
 
         if(Input.GetKeyDown(KeyCode.Space))
-        Interact();
+        StartCoroutine(Interact());
     }
 
-    void Interact()
+    IEnumerator Interact()
     {
         var facingDir = new Vector3(character.Animator.MoveX, character.Animator.MoveY);
         var interactPos = transform.position + facingDir;
@@ -47,7 +48,7 @@ public class PlayerController : MonoBehaviour
 
         if(collider != null)
         {
-            collider.GetComponent<Interactable>()?.Interact(transform);
+            yield return collider.GetComponent<Interactable>()?.Interact(transform);
         }
     }
 
@@ -60,11 +61,35 @@ public class PlayerController : MonoBehaviour
             var triggerable = collider.GetComponent<IPlayerTriggerable>();
             if (triggerable != null)
             {
-                character.Animator.IsMoving = false;
                 triggerable.OnPlayerTriggered(this);
                 break;
             }
         }
+    }
+
+    public object CaptureState()
+    {
+
+        var saveData = new PlayerSaveData()
+        {
+            position = new float [] {transform.position.x, transform.position.y},
+            pokemons = GetComponent<PokemonParty>().Pokemons.Select(p=> p.GetSaveData()).ToList()
+        };
+
+        return saveData;
+    }
+
+    public void RestoreState(object state)
+    {
+        var saveData = (PlayerSaveData)state;
+
+        //Restore Position
+        var pos = saveData.position;
+        transform.position = new Vector3(pos[0], pos[1]);
+
+        //Restore Party
+        GetComponent<PokemonParty>().Pokemons = saveData.pokemons.Select(s=> new Pokemon(s)).ToList();
+
     }
 
     public string Name {
@@ -76,5 +101,12 @@ public class PlayerController : MonoBehaviour
     }
 
     public Character Character => character;
+}
+
+[Serializable]
+public class PlayerSaveData
+{
+    public float [] position;
+    public List<PokemonSaveData> pokemons;
 }
 

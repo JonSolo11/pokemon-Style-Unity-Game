@@ -120,7 +120,7 @@ public class SecondaryEffects : MoveEffects
     [SerializeField] MoveTarget target;
 
     public SecondaryEffects(List<StatBoost> boosts, ConditionID status, ConditionID volatileStatus, int chance, MoveTarget target) 
-        : base(boosts, status, volatileStatus) // Add this constructor
+        : base(boosts, status, volatileStatus)
     {
         this.chance = chance;
         this.target = target;
@@ -140,7 +140,7 @@ public class StatBoost
     public Stat stat;
     public int boost;
 
-     public StatBoost(Stat stat, int boost) // Add this constructor
+     public StatBoost(Stat stat, int boost)
     {
         this.stat = stat;
         this.boost = boost;

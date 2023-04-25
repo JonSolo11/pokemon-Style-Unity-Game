@@ -71,3 +71,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d4a5cc150d85b94d8cc5a5661789803, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  connectedScenes:
+  - {fileID: 0}

@@ -37,7 +37,21 @@ MonoBehaviour:
     level: 1
   - moveBase: {fileID: 11400000, guid: 0fdffd23476282440bdeaa11b460ecbc, type: 2}
     level: 1
-  - moveBase: {fileID: 11400000, guid: 0127a50c9b59c56498becdf68684b0fd, type: 2}
-    level: 35
   - moveBase: {fileID: 11400000, guid: d002ed43aab3a764fa73853ca4d66b70, type: 2}
     level: 7
+  LearnableByItems:
+  - {fileID: 11400000, guid: b60fad892aae3af4bb741c537e5f7e09, type: 2}
+  - {fileID: 11400000, guid: a6b23455ee17a97438af6dbf6a2e8714, type: 2}
+  - {fileID: 11400000, guid: 01726369e49d20645b22daad523d0593, type: 2}
+  - {fileID: 11400000, guid: e3141af3449f12d4c839b9d1b346c079, type: 2}
+  - {fileID: 11400000, guid: 17ffa946d70b1c24b99117c9611aa7f6, type: 2}
+  - {fileID: 11400000, guid: c362241983e864d45979c2e2bc5f5a36, type: 2}
+  - {fileID: 11400000, guid: 86c530690c0ae804386c4917e16924c3, type: 2}
+  - {fileID: 11400000, guid: 262ce5fe1bebbb04ebfcb1d66b02561d, type: 2}
+  - {fileID: 11400000, guid: d63b1f6bfd1ed0e40b482a33e893ceee, type: 2}
+  - {fileID: 11400000, guid: 6e2d0cf7cabb7214a973aa032d1e66e5, type: 2}
+  - {fileID: 11400000, guid: 0127a50c9b59c56498becdf68684b0fd, type: 2}
+  - {fileID: 11400000, guid: 17af272f98bda654e877dfa64dbf13ca, type: 2}
+  - {fileID: 11400000, guid: ce3d8c9e51cef1a47832c411db7be328, type: 2}
+  - {fileID: 11400000, guid: ee52c0ab8bb4f9a499be4c8289c38e33, type: 2}
+  - {fileID: 11400000, guid: bb23af5c279140d4f92a8620ffb196d5, type: 2}

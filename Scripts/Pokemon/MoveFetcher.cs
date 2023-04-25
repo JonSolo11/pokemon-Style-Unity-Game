@@ -14,22 +14,54 @@ using UnityEditor;
 
 public class MoveFetcher : MonoBehaviour
 {
-
-    private MoveFetcher moveFetcher;
-
-    void Start()
+    public IEnumerator Init()
     {
-        FetchAllMoves();
+        Debug.Log("Move fetcher started");
+        if (MovesDB.moves.Count == 165)
+        {
+            Debug.Log("MovesDB has 165 objects, skipping API requests.");
+        }
+        else
+        {
+           yield return  StartCoroutine(FetchMoveList());
+        }
     }
 
-    private void FetchAllMoves()
+    private IEnumerator FetchMoveList()
     {
-        // Adjust the range to match the number of moves you want to fetch
-        for (int moveId = 1; moveId <= 165; moveId++)
+        string url = "https://pokeapi.co/api/v2/move?limit=165";
+        using (UnityWebRequest webRequest = UnityWebRequest.Get(url))
         {
-            string assetPath = $"Assets/Game/Resources/Moves/Move_{moveId}.asset";
-            StartCoroutine(FetchAndSaveMoveData(moveId, assetPath));
+            yield return webRequest.SendWebRequest();
+            if (webRequest.result != UnityWebRequest.Result.Success)
+            {
+                Debug.LogError("Failed to fetch move list.");
+                yield break;
+            }
+
+            JSONNode moveListData = JSON.Parse(webRequest.downloadHandler.text);
+            JSONArray moveListArray = moveListData["results"].AsArray;
+
+            foreach (JSONNode moveData in moveListArray)
+            {
+                string moveName = moveData["name"].Value.Replace("-", " ");
+                moveName = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(moveName.ToLower());
+
+                // Check if the move is already in the database
+                if (MovesDB.GetMoveByName(moveName) == null)
+                {
+                    int moveId = GetIdFromUrl(moveData["url"].Value);
+                    string assetPath = $"Assets/Game/Resources/Moves/Move_{moveId}.asset";
+                    StartCoroutine(FetchAndSaveMoveData(moveId, assetPath));
+                }
+            }
         }
+    }
+
+    private int GetIdFromUrl(string url)
+    {
+        string idString = Regex.Match(url, @"(\d+)/?$").Groups[1].Value;
+        return int.Parse(idString);
     }
 
     private IEnumerator FetchAndSaveMoveData(int moveId, string assetPath)
@@ -67,11 +99,11 @@ public class MoveFetcher : MonoBehaviour
         // Parse move name and format it as camelCase
         string moveName = moveData["name"].Value.Replace("-", " ");
         moveName = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(moveName.ToLower());
-        Debug.Log("Move Name: " + moveName);
+
 
         // Parse move description
         string description = Regex.Replace(GetEnglishFlavorText(moveData["flavor_text_entries"].AsArray), @"(?<![0-9])-|-(?![0-9])", " ");
-        Debug.Log("Description: " + description);
+
 
         // Parse move power, accuracy, pp, and type
         int power = moveData["power"].AsInt;
@@ -82,8 +114,6 @@ public class MoveFetcher : MonoBehaviour
         // Parse move category
         string categoryName = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(moveData["damage_class"]["name"].Value.ToLower());
         MoveCategory category = (MoveCategory)Enum.Parse(typeof(MoveCategory), categoryName);
-
-        Debug.Log("Move Category: " + category);
 
         // Parse stat changes
         List<StatBoost> statBoosts = new List<StatBoost>();
@@ -167,6 +197,7 @@ public class MoveFetcher : MonoBehaviour
 
     private void SaveMoveAsset(MoveBase move, string assetPath)
     {
+        Debug.Log($"{move.Name} added!");
         // Ensure the directory exists
         Directory.CreateDirectory(Path.GetDirectoryName(assetPath));
 

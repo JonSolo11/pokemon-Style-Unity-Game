@@ -134,6 +134,8 @@ GameObject:
   - component: {fileID: 2282228772330373404}
   - component: {fileID: 6558336886013265847}
   - component: {fileID: 6558336886013265844}
+  - component: {fileID: 1931833581990224226}
+  - component: {fileID: 8621579825761572098}
   m_Layer: 11
   m_Name: Player
   m_TagString: Player
@@ -337,3 +339,63 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.81137514, y: 1.1983459}
   m_EdgeRadius: 0
+--- !u!114 &1931833581990224226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6558336886013265853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4881f89f8b930e34489bbb86116ccd4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uniqueId: 
+--- !u!114 &8621579825761572098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6558336886013265853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6d36afce1a12804f8c59a4f842b68c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slots:
+  - item: {fileID: 11400000, guid: e209ce69999a0ce4c9d875b04f161d47, type: 2}
+    count: 3
+  - item: {fileID: 11400000, guid: 10cac00069a2e4b43b711fcad055b01e, type: 2}
+    count: 3
+  - item: {fileID: 11400000, guid: 82cd65fc11b625044a2d2b11f76cacf8, type: 2}
+    count: 1
+  - item: {fileID: 11400000, guid: d7245aef1e2aac04fb8b814beacc4456, type: 2}
+    count: 1
+  - item: {fileID: 11400000, guid: c4934b7382ddaf540ba370ab67c0fd81, type: 2}
+    count: 3
+  - item: {fileID: 11400000, guid: 335f8e07b249ac24d8076eed99327ae0, type: 2}
+    count: 3
+  - item: {fileID: 11400000, guid: fb6e9ff4fa473094fb41741c5c508072, type: 2}
+    count: 3
+  - item: {fileID: 11400000, guid: c4934b7382ddaf540ba370ab67c0fd81, type: 2}
+    count: 3
+  - item: {fileID: 11400000, guid: fb6e9ff4fa473094fb41741c5c508072, type: 2}
+    count: 3
+  - item: {fileID: 11400000, guid: 335f8e07b249ac24d8076eed99327ae0, type: 2}
+    count: 3
+  - item: {fileID: 11400000, guid: e209ce69999a0ce4c9d875b04f161d47, type: 2}
+    count: 3
+  - item: {fileID: 11400000, guid: 82cd65fc11b625044a2d2b11f76cacf8, type: 2}
+    count: 3
+  - item: {fileID: 11400000, guid: 10cac00069a2e4b43b711fcad055b01e, type: 2}
+    count: 3
+  - item: {fileID: 11400000, guid: d7245aef1e2aac04fb8b814beacc4456, type: 2}
+    count: 3
+  pokeballSlots:
+  - item: {fileID: 11400000, guid: e9de92e019c32694995222eae1d61ca1, type: 2}
+    count: 10
+  - item: {fileID: 11400000, guid: 8f6110c744e0d34478be472a4569db0a, type: 2}
+    count: 10
+  tmSlots: []

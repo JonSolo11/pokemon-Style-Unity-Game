@@ -8,7 +8,6 @@ using SimpleJSON;
 using System;
 using System.IO;
 
-[CreateAssetMenu(fileName = "Pokemon", menuName = "Pokemon/Create new pokemon")]
 public class GetPokemon : MonoBehaviour
 {
     public string pokemonName;
@@ -33,23 +32,48 @@ public class GetPokemon : MonoBehaviour
 
     [SerializeField] public List<LearnableMove> LearnableMove = new List<LearnableMove>();
 
-    private MoveFetcher moveFetcher;
-
-    void Start()
+    public IEnumerator Init()
     {
-        moveFetcher = FindObjectOfType<MoveFetcher>();
-        if (moveFetcher == null)
+        yield return StartCoroutine(FetchPokemonNames(pokemonNames =>
         {
-            Debug.LogError("MoveFetcher not found in the scene");
-        }
-        for (int i = 1; i <= 151; i++)
-        {
-            string pokemonNumber = i.ToString();
-            PokemonBase existingPokemon = Resources.Load<PokemonBase>($"Pokemon/{pokemonNumber}");
-            if (existingPokemon == null)
+            foreach (string pokemonName in pokemonNames)
             {
-                StartCoroutine(CreateFromAPI(pokemonNumber));
+                string formattedName = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(pokemonName);
+                if (PokemonDB.GetPokemonByName(formattedName) == null)
+                {
+                    StartCoroutine(CreateFromAPI(pokemonName));
+                }
+                else
+                {
+                    continue;
+                }
             }
+        }));
+    }
+
+
+    private IEnumerator FetchPokemonNames(Action<List<string>> callback)
+    {
+        string url = "https://pokeapi.co/api/v2/pokemon?limit=151";
+        using (UnityWebRequest request = UnityWebRequest.Get(url))
+        {
+            yield return request.SendWebRequest();
+
+            if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+            {
+                Debug.LogError(request.error);
+                yield break;
+            }
+
+            JSONNode response = JSON.Parse(request.downloadHandler.text);
+            List<string> pokemonNames = new List<string>();
+
+            foreach (JSONNode result in response["results"])
+            {
+                pokemonNames.Add(result["name"].Value);
+            }
+
+            callback(pokemonNames);
         }
     }
 
@@ -74,7 +98,6 @@ public class GetPokemon : MonoBehaviour
         // Create new PokemonBase instance and set properties from JSON data
         PokemonBase newPokemon = ScriptableObject.CreateInstance<PokemonBase>();
         newPokemon.pokemonName = ToTitleCase(response["name"].Value);
-        int pokemonNumber = (int.Parse(pokemonName)-1);
         newPokemon.type1 = (PokemonType)System.Enum.Parse(typeof(PokemonType), ToTitleCase(response["types"][0]["type"]["name"].Value));
         if (response["types"].Count > 1)
         {
@@ -173,7 +196,11 @@ public class GetPokemon : MonoBehaviour
             MoveBase moveBase = Resources.Load<MoveBase>($"Moves/{moveName}");
             if (moveBase != null)
             {
-                //FIX ME CHANGE WHEN ADDING TM/HM
+                if((moveNode["version_group_details"][0]["move_learn_method"]["name"] == "machine") && (moveNode["version_group_details"][0]["version_group"]["name"] == "red-blue") || ((moveNode["version_group_details"][1]["move_learn_method"]["name"] == "machine") && (moveNode["version_group_details"][1]["version_group"]["name"] == "red-blue")))
+                {
+                    newPokemon.LearnableByItems.Add(moveBase);
+                }
+
                 int level = moveNode["version_group_details"][0]["level_learned_at"].AsInt;
                 if(level ==0)
                     continue;

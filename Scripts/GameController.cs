@@ -1,32 +1,54 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum GameState { FreeRoam, Battle, Dialog, Cutscene, Paused }
+public enum GameState { FreeRoam, Battle, Dialog, Menu, PartyScreen, Bag, Cutscene, Paused }
 
 public class GameController : MonoBehaviour
 {   
     [SerializeField] PlayerController playerController;
     [SerializeField] BattleSystem battleSystem;
     [SerializeField] Camera worldCamera;
+    [SerializeField] PartyScreen partyScreen;
+    [SerializeField] InventoryUI inventoryUI;
 
-    GameState state;
+    public GameState state;
     GameState prevState;
 
     public SceneDetails CurrentScene {get; private set;}
     public SceneDetails PrevScene {get; private set;}
 
+    MenuController menuController;
+
     public static GameController Instance {get; private set;}
+
+    [SerializeField] private MoveFetcher moveFetcher;
+    [SerializeField] private GetPokemon pokemonFetcher;
+    [SerializeField] private ItemFetcher itemFetcher;
 
     private void Awake()
     {
         Instance = this;
+
+        menuController = GetComponent<MenuController>();
+
+        //Uncomment to hide mouse
+        
+        // Cursor.lockState = CursorLockMode.Locked;
+        // Cursor.visible = false;
+
+        StartCoroutine(MovesDB.Init(moveFetcher));
+        StartCoroutine(PokemonDB.Init(pokemonFetcher));
+        StartCoroutine(itemFetcher.Init());
         ConditionsDB.Init();
     }
 
     private void Start()
     {
         battleSystem.OnBattleEnd += EndBattle;
+
+        partyScreen.Init();
 
         DialogManager.Instance.OnShowDialog += () =>
         {
@@ -38,6 +60,13 @@ public class GameController : MonoBehaviour
             if(state == GameState.Dialog)
                 state = GameState.FreeRoam;
         };
+
+        menuController.onBack += () => 
+        {
+            state = GameState.FreeRoam;
+        };
+        menuController.onMenuSelected +=  OnMenuSelected;
+
     }
 
     public void PauseGame(bool pause)
@@ -60,7 +89,7 @@ public class GameController : MonoBehaviour
         worldCamera.gameObject.SetActive(false);
 
         var playerParty = playerController.GetComponent<PokemonParty>();
-        var wildPokemon = FindObjectOfType<MapArea>().GetComponent<MapArea>().GetRandomWildPokemon();
+        var wildPokemon = CurrentScene.GetComponent<MapArea>().GetRandomWildPokemon();
 
         var wildPokemonCopy = new Pokemon(wildPokemon.Base, wildPokemon.Level);
 
@@ -107,6 +136,12 @@ public class GameController : MonoBehaviour
         if(state == GameState.FreeRoam)
         {
             playerController.HandleUpdate();
+
+            if(Input.GetKeyDown(KeyCode.Return))
+            {
+                menuController.OpenMenu();
+                state = GameState.Menu;
+            }
         }
         else if(state == GameState.Battle)
         {
@@ -116,6 +151,33 @@ public class GameController : MonoBehaviour
         {
             DialogManager.Instance.HandleUpdate();
         }
+        else if(state == GameState.Menu)
+        {
+            menuController.HandleUpdate();
+        }
+        else if(state == GameState.PartyScreen)
+        {
+            Action onSelected = () =>
+            {
+                //TODO: pokemon summary
+            };
+            Action onBack = () =>
+            {
+                partyScreen.gameObject.SetActive(false);
+                state = GameState.Menu;
+            };
+            partyScreen.HandleUpdate(onSelected, onBack);
+        }
+        else if(state == GameState.Bag)
+        {
+            Action onBack = () =>
+            {
+                inventoryUI.gameObject.SetActive(false);
+                state = GameState.Menu;
+            };
+
+            inventoryUI.HandleUpdate(onBack);
+        }
     }
 
     public void SetCurrentScene(SceneDetails currScene)
@@ -123,4 +185,37 @@ public class GameController : MonoBehaviour
         PrevScene = CurrentScene;
         CurrentScene = currScene;
     }
+
+    void OnMenuSelected(int selectedItem)
+    {
+        if (selectedItem == 0)
+        {
+            //pokemon
+            partyScreen.gameObject.SetActive(true);
+            state = GameState.PartyScreen;
+
+        }
+        else if (selectedItem == 1)
+        {
+            //Bag
+            inventoryUI.gameObject.SetActive(true);
+            state = GameState.Bag;
+        }
+        else if (selectedItem == 2)
+        {
+            //Save
+            SavingSystem.i.Save("saveSlot1");
+            state = GameState.FreeRoam;
+            menuController.CloseMenu();
+        }
+        else if (selectedItem == 3)
+        {
+            //Load
+            SavingSystem.i.Load("saveSlot1");
+            state = GameState.FreeRoam;
+            menuController.CloseMenu();
+        }
+    }
+
+    public GameState State => state;
 }
