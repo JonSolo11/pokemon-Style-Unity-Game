@@ -16,6 +16,8 @@ MonoBehaviour:
   description: Cures paralysis.
   category: status-cures
   icon: {fileID: 21300000, guid: 5e7393fbb97b33542b4fabf17d105d0d, type: 3}
+  price: 200
+  isSellable: 1
   hpAmount: 0
   restoreMaxHP: 0
   ppAmount: 0

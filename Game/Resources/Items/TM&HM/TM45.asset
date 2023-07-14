@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 231280d422683534ea44d16ece6498b4, type: 3}
   m_Name: TM45
   m_EditorClassIdentifier: 
-  name: Thunder
-  description: Teaches Thunder to a Pokemon
+  name: Thunder Wave
+  description: Teaches Thunder Wave to a Pokemon
   category: all-machines
-  icon: {fileID: 1116001707, guid: d0d6f210bf6e2b44a82cbc8b27a4511f, type: 3}
-  move: {fileID: 11400000, guid: 01726369e49d20645b22daad523d0593, type: 2}
+  icon: {fileID: -831799496, guid: d0d6f210bf6e2b44a82cbc8b27a4511f, type: 3}
+  price: 500
+  isSellable: 1
+  move: {fileID: 11400000, guid: 91deaa2a801bf5d43b7d17720e2e6dea, type: 2}
+  itemName: TM45
   isHM: 0

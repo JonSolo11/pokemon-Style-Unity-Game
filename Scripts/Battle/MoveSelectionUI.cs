@@ -40,11 +40,12 @@ public class MoveSelectionUI : MonoBehaviour
         }
     }
 
-    public void UpdateMoveSelection(int selction)
+    public void UpdateMoveSelection(int selection)
     {
+        Debug.Log("setmovedata called");
         for(int i = 0; i < PokemonBase.MaxNumOfMoves + 1; ++i)
         {
-            if (i == selction)
+            if (i == selection)
                 moveTexts[i].color = highlightedColor;
             else
                 moveTexts[i].color = Color.black;

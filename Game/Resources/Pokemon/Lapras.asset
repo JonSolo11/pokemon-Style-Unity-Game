@@ -29,14 +29,20 @@ MonoBehaviour:
   growthRate: 3
   catchRate: 45
   LearnableMove:
+  - moveBase: {fileID: 11400000, guid: 8a27a6e4766e4e94d8733be016a0bedd, type: 2}
+    level: 25
   - moveBase: {fileID: 11400000, guid: 08bb87a5680b4d5468c5304adde44ec8, type: 2}
     level: 1
   - moveBase: {fileID: 11400000, guid: eccb870cf9d69184d8c30f7c9fdf3201, type: 2}
     level: 16
   - moveBase: {fileID: 11400000, guid: 28f4d33bd0690dd498d025ef92951dd1, type: 2}
     level: 20
+  - moveBase: {fileID: 11400000, guid: 04425952f35537947b9a42f612e8c84d, type: 2}
+    level: 1
   - moveBase: {fileID: 11400000, guid: 2d245a1aab692ea46b36993a3b2d06e9, type: 2}
     level: 46
+  - moveBase: {fileID: 11400000, guid: 3f89e955d9afa2e4bbb26805a6e8a499, type: 2}
+    level: 38
   - moveBase: {fileID: 11400000, guid: 07abc203bcf2de84c895ca631654c159, type: 2}
     level: 31
   LearnableByItems:
@@ -66,3 +72,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 17af272f98bda654e877dfa64dbf13ca, type: 2}
   - {fileID: 11400000, guid: ee52c0ab8bb4f9a499be4c8289c38e33, type: 2}
   - {fileID: 11400000, guid: bb23af5c279140d4f92a8620ffb196d5, type: 2}
+  Evolutions: []

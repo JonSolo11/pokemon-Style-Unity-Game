@@ -16,6 +16,8 @@ MonoBehaviour:
   description: Revives with half HP.
   category: revival
   icon: {fileID: 21300000, guid: aa312c3bf859c8741b7c64856bd610f6, type: 3}
+  price: 2000
+  isSellable: 1
   hpAmount: 0
   restoreMaxHP: 0
   ppAmount: 0

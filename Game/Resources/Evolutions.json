@@ -1,0 +1,714 @@
+{
+    "pokemon": [
+        {
+            "name": "Bulbasaur",
+            "evolutions": [
+                {
+                    "pokemonName": "Ivysaur",
+                    "level": 16,
+                    "item": null
+                }
+            ]
+        },
+        {
+            "name": "Ivysaur",
+            "evolutions": [
+                {
+                    "pokemonName": "Venusaur",
+                    "level": 32,
+                    "item": null
+                }
+            ]
+        },
+        {
+            "name": "Charmander",
+            "evolutions": [
+                {
+                    "pokemonName": "Charmeleon",
+                    "level": 16,
+                    "item": null
+                }
+            ]
+        },
+        {
+            "name": "Charmeleon",
+            "evolutions": [
+                {
+                    "pokemonName": "Charizard",
+                    "level": 36,
+                    "item": null
+                }
+            ]
+        },
+        {
+            "name": "Squirtle",
+            "evolutions": [
+                {
+                    "pokemonName": "Wartortle",
+                    "level": 16,
+                    "item": null
+                }
+            ]
+        },
+        {
+            "name": "Wartortle",
+            "evolutions": [
+                {
+                    "pokemonName": "Blastoise",
+                    "level": 36,
+                    "item": null
+                }
+            ]
+        },
+        {
+            "name": "Caterpie",
+            "evolutions": [
+                {
+                    "pokemonName": "Metapod",
+                    "level": 7,
+                    "item": null
+                }
+            ]
+        },
+        {
+            "name": "Metapod",
+            "evolutions": [
+                {
+                    "pokemonName": "Butterfree",
+                    "level": 10,
+                    "item": null
+                }
+            ]
+        },
+        {
+            "name": "Weedle",
+            "evolutions": [
+                {
+                    "pokemonName": "Kakuna",
+                    "level": 7,
+                    "item": null
+                }
+            ]
+        },
+        {
+            "name": "Kakuna",
+            "evolutions": [
+                {
+                    "pokemonName": "Beedrill",
+                    "level": 10,
+                    "item": null
+                }
+            ]
+        },
+        {
+            "name": "Pidgey",
+            "evolutions": [
+                {
+                    "pokemonName": "Pidgeotto",
+                    "level": 18,
+                    "item": null
+                }
+            ]
+        },
+        {
+            "name": "Pidgeotto",
+            "evolutions": [
+                {
+                    "pokemonName": "Pidgeot",
+                    "level": 36,
+                    "item": null
+                }
+            ]
+        },
+        {
+            "name": "Rattata",
+            "evolutions": [
+                {
+                    "pokemonName": "Raticate",
+                    "level": 20,
+                    "item": null
+                }
+            ]
+        },
+        {
+            "name": "Spearow",
+            "evolutions": [
+                {
+                    "pokemonName": "Fearow",
+                    "level": 20,
+                    "item": null
+                }
+            ]
+        },
+        {
+            "name": "Ekans",
+            "evolutions": [
+                {
+                    "pokemonName": "Arbok",
+                    "level": 22,
+                    "item": null
+                }
+            ]
+        },
+        {
+            "name": "Pikachu",
+            "evolutions": [
+                {
+                    "pokemonName": "Raichu",
+                    "level": 0,
+                    "item": "thunder-stone"
+                }
+            ]
+        },
+        {
+            "name": "Sandshrew",
+            "evolutions": [
+                {
+                    "pokemonName": "Sandslash",
+                    "level": 22,
+                    "item": null
+                }
+            ]
+        },
+        {
+            "name": "Nidoran-F",
+            "evolutions": [
+                {
+                    "pokemonName": "Nidorina",
+                    "level": 16,
+                    "item": null
+                }
+            ]
+        },
+        {
+            "name": "Nidorina",
+            "evolutions": [
+                {
+                    "pokemonName": "Nidoqueen",
+                    "level": 0,
+                    "item": "moon-stone"
+                }
+            ]
+        },
+        {
+            "name": "Nidoran-M",
+            "evolutions": [
+                {
+                    "pokemonName": "Nidorino",
+                    "level": 16,
+                    "item": null
+                }
+            ]
+        },
+        {
+            "name": "Nidorino",
+            "evolutions": [
+                {
+                    "pokemonName": "Nidoking",
+                    "level": 0,
+                    "item": "moon-stone"
+                }
+            ]
+        },
+        {
+            "name": "Clefairy",
+            "evolutions": [
+                {
+                    "pokemonName": "Clefable",
+                    "level": 0,
+                    "item": "moon-stone"
+                }
+            ]
+        },
+        {
+            "name": "Vulpix",
+            "evolutions": [
+                {
+                    "pokemonName": "Ninetales",
+                    "level": 0,
+                    "item": "fire-stone"
+                }
+            ]
+        },
+        {
+            "name": "Jigglypuff",
+            "evolutions": [
+                {
+                    "pokemonName": "Wigglytuff",
+                    "level": 0,
+                    "item": "moon-stone"
+                }
+            ]
+        },
+        {
+            "name": "Zubat",
+            "evolutions": [
+                {
+                    "pokemonName": "Golbat",
+                    "level": 22,
+                    "item": null
+                }
+            ]
+        },
+        {
+            "name": "Oddish",
+            "evolutions": [
+                {
+                    "pokemonName": "Gloom",
+                    "level": 21,
+                    "item": null
+                }
+            ]
+        },
+        {
+            "name": "Gloom",
+            "evolutions": [
+                {
+                    "pokemonName": "Vileplume",
+                    "level": 0,
+                    "item": "leaf-stone"
+                }
+            ]
+        },
+        {
+            "name": "Paras",
+            "evolutions": [
+                {
+                    "pokemonName": "Parasect",
+                    "level": 24,
+                    "item": null
+                }
+            ]
+        },
+        {
+            "name": "Venonat",
+            "evolutions": [
+                {
+                    "pokemonName": "Venomoth",
+                    "level": 31,
+                    "item": null
+                }
+            ]
+        },
+        {
+            "name": "Diglett",
+            "evolutions": [
+                {
+                    "pokemonName": "Dugtrio",
+                    "level": 26,
+                    "item": null
+                }
+            ]
+        },
+        {
+            "name": "Meowth",
+            "evolutions": [
+                {
+                    "pokemonName": "Persian",
+                    "level": 28,
+                    "item": null
+                }
+            ]
+        },
+        {
+            "name": "Psyduck",
+            "evolutions": [
+                {
+                    "pokemonName": "Golduck",
+                    "level": 33,
+                    "item": null
+                }
+            ]
+        },
+        {
+            "name": "Mankey",
+            "evolutions": [
+                {
+                    "pokemonName": "Primeape",
+                    "level": 28,
+                    "item": null
+                }
+            ]
+        },
+        {
+            "name": "Growlithe",
+            "evolutions": [
+                {
+                    "pokemonName": "Arcanine",
+                    "level": 0,
+                    "item": "fire-stone"
+                }
+            ]
+        },
+        {
+            "name": "Poliwag",
+            "evolutions": [
+                {
+                    "pokemonName": "Poliwhirl",
+                    "level": 25,
+                    "item": null
+                }
+            ]
+        },
+        {
+            "name": "Poliwhirl",
+            "evolutions": [
+                {
+                    "pokemonName": "Poliwrath",
+                    "level": 0,
+                    "item": "water-stone"
+                }
+            ]
+        },
+        {
+            "name": "Abra",
+            "evolutions": [
+                {
+                    "pokemonName": "Kadabra",
+                    "level": 16,
+                    "item": null
+                }
+            ]
+        },
+        {
+            "name": "Kadabra",
+            "evolutions": [
+                {
+                    "pokemonName": "Alakazam",
+                    "level": 0,
+                    "item": "Trade"
+                }
+            ]
+        },
+        {
+            "name": "Machop",
+            "evolutions": [
+                {
+                    "pokemonName": "Machoke",
+                    "level": 28,
+                    "item": null
+                }
+            ]
+        },
+        {
+            "name": "Machoke",
+            "evolutions": [
+                {
+                    "pokemonName": "Machamp",
+                    "level": 0,
+                    "item": "Trade"
+                }
+            ]
+        },
+        {
+            "name": "Bellsprout",
+            "evolutions": [
+                {
+                    "pokemonName": "Weepinbell",
+                    "level": 21,
+                    "item": null
+                }
+            ]
+        },
+        {
+            "name": "Weepinbell",
+            "evolutions": [
+                {
+                    "pokemonName": "Victreebel",
+                    "level": 0,
+                    "item": "leaf-stone"
+                }
+            ]
+        },
+        {
+            "name": "Tentacool",
+            "evolutions": [
+                {
+                    "pokemonName": "Tentacruel",
+                    "level": 30,
+                    "item": null
+                }
+            ]
+        },
+        {
+            "name": "Geodude",
+            "evolutions": [
+                {
+                    "pokemonName": "Graveler",
+                    "level": 25,
+                    "item": null
+                }
+            ]
+        },
+        {
+            "name": "Graveler",
+            "evolutions": [
+                {
+                    "pokemonName": "Golem",
+                    "level": 0,
+                    "item": "Trade"
+                }
+            ]
+        },
+        {
+            "name": "Ponyta",
+            "evolutions": [
+                {
+                    "pokemonName": "Rapidash",
+                    "level": 40,
+                    "item": null
+                }
+            ]
+        },
+        {
+            "name": "Slowpoke",
+            "evolutions": [
+                {
+                    "pokemonName": "Slowbro",
+                    "level": 37,
+                    "item": null
+                }
+            ]
+        },
+        {
+            "name": "Magnemite",
+            "evolutions": [
+                {
+                    "pokemonName": "Magneton",
+                    "level": 30,
+                    "item": null
+                }
+            ]
+        },
+        {
+            "name": "Doduo",
+            "evolutions": [
+                {
+                    "pokemonName": "Dodrio",
+                    "level": 31,
+                    "item": null
+                }
+            ]
+        },
+        {
+            "name": "Seel",
+            "evolutions": [
+                {
+                    "pokemonName": "Dewgong",
+                    "level": 34,
+                    "item": null
+                }
+            ]
+        },
+        {
+            "name": "Grimer",
+            "evolutions": [
+                {
+                    "pokemonName": "Muk",
+                    "level": 38,
+                    "item": null
+                }
+            ]
+        },
+        {
+            "name": "Shellder",
+            "evolutions": [
+                {
+                    "pokemonName": "Cloyster",
+                    "level": 0,
+                    "item": "water-stone"
+                }
+            ]
+        },
+        {
+            "name": "Gastly",
+            "evolutions": [
+                {
+                    "pokemonName": "Haunter",
+                    "level": 25,
+                    "item": null
+                }
+            ]
+        },
+        {
+            "name": "Haunter",
+            "evolutions": [
+                {
+                    "pokemonName": "Gengar",
+                    "level": 0,
+                    "item": "Trade"
+                }
+            ]
+        },
+        {
+            "name": "Drowzee",
+            "evolutions": [
+                {
+                    "pokemonName": "Hypno",
+                    "level": 26,
+                    "item": null
+                }
+            ]
+        },
+        {
+            "name": "Krabby",
+            "evolutions": [
+                {
+                    "pokemonName": "Kingler",
+                    "level": 28,
+                    "item": null
+                }
+            ]
+        },
+        {
+            "name": "Voltorb",
+            "evolutions": [
+                {
+                    "pokemonName": "Electrode",
+                    "level": 30,
+                    "item": null
+                }
+            ]
+        },
+        {
+            "name": "Exeggcute",
+            "evolutions": [
+                {
+                    "pokemonName": "Exeggutor",
+                    "level": 0,
+                    "item": "leaf-stone"
+                }
+            ]
+        },
+        {
+            "name": "Cubone",
+            "evolutions": [
+                {
+                    "pokemonName": "Marowak",
+                    "level": 28,
+                    "item": null
+                }
+            ]
+        },
+        {
+            "name": "Koffing",
+            "evolutions": [
+                {
+                    "pokemonName": "Weezing",
+                    "level": 35,
+                    "item": null
+                }
+            ]
+        },
+        {
+            "name": "Rhyhorn",
+            "evolutions": [
+                {
+                    "pokemonName": "Rhydon",
+                    "level": 42,
+                    "item": null
+                }
+            ]
+        },
+        {
+            "name": "Horsea",
+            "evolutions": [
+                {
+                    "pokemonName": "Seadra",
+                    "level": 32,
+                    "item": null
+                }
+            ]
+        },
+        {
+            "name": "Goldeen",
+            "evolutions": [
+                {
+                    "pokemonName": "Seaking",
+                    "level": 33,
+                    "item": null
+                }
+            ]
+        },
+        {
+            "name": "Staryu",
+            "evolutions": [
+                {
+                    "pokemonName": "Starmie",
+                    "level": 0,
+                    "item": "water-stone"
+                }
+            ]
+        },
+        {
+            "name": "Magikarp",
+            "evolutions": [
+                {
+                    "pokemonName": "Gyarados",
+                    "level": 20,
+                    "item": null
+                }
+            ]
+        },
+        {
+            "name": "Eevee",
+            "evolutions": [
+                {
+                    "pokemonName": "Vaporeon",
+                    "level": 0,
+                    "item": "water-stone"
+                },
+                {
+                    "pokemonName": "Jolteon",
+                    "level": 0,
+                    "item": "thunder-stone"
+                },
+                {
+                    "pokemonName": "Flareon",
+                    "level": 0,
+                    "item": "fire-stone"
+                }
+            ]
+        },
+        {
+            "name": "Omanyte",
+            "evolutions": [
+                {
+                    "pokemonName": "Omastar",
+                    "level": 40,
+                    "item": null
+                }
+            ]
+        },
+        {
+            "name": "Kabuto",
+            "evolutions": [
+                {
+                    "pokemonName": "Kabutops",
+                    "level": 40,
+                    "item": null
+                }
+            ]
+        },
+        {
+            "name": "Dratini",
+            "evolutions": [
+                {
+                    "pokemonName": "Dragonair",
+                    "level": 30,
+                    "item": null
+                }
+            ]
+        },
+        {
+            "name": "Dragonair",
+            "evolutions": [
+                {
+                    "pokemonName": "Dragonite",
+                    "level": 55,
+                    "item": null
+                }
+            ]
+        }
+    ]
+}

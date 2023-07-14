@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa6f834197b20294db6865c722120bc3, type: 3}
   m_Name: nugget
   m_EditorClassIdentifier: 
-  name: nugget
-  description: "Sell for 5000 Pok\xE9dollars, or to Ore Collector for 10000 Pok\xE9dollars."
-  category: loot
+  name: 
+  description: 
+  category: 
   icon: {fileID: 21300000, guid: 797e88d53ba706540b5012e993bd58d2, type: 3}
+  price: 0
+  isSellable: 1

@@ -43,6 +43,8 @@ MonoBehaviour:
     level: 39
   - moveBase: {fileID: 11400000, guid: c14cdc96ea43d4444948abf4dabc731d, type: 2}
     level: 48
+  - moveBase: {fileID: 11400000, guid: d02d43092e3e6f3498bd8282dc73ea65, type: 2}
+    level: 31
   - moveBase: {fileID: 11400000, guid: 30f9a03243f20434c8fc2363046c66b4, type: 2}
     level: 16
   - moveBase: {fileID: 11400000, guid: a08cafdec7d470044a7b77563c52031f, type: 2}
@@ -81,3 +83,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ee52c0ab8bb4f9a499be4c8289c38e33, type: 2}
   - {fileID: 11400000, guid: 44bb33c043127aa449080a0ce452288c, type: 2}
   - {fileID: 11400000, guid: bb23af5c279140d4f92a8620ffb196d5, type: 2}
+  Evolutions: []

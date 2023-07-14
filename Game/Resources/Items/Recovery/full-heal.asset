@@ -16,6 +16,8 @@ MonoBehaviour:
   description: Cures any status ailment and confusion.
   category: status-cures
   icon: {fileID: 21300000, guid: 894b08db5215c4049a518f6cb57d31e0, type: 3}
+  price: 400
+  isSellable: 1
   hpAmount: 0
   restoreMaxHP: 0
   ppAmount: 0

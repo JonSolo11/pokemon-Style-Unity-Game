@@ -16,6 +16,8 @@ MonoBehaviour:
   description: Cures sleep.
   category: status-cures
   icon: {fileID: 21300000, guid: 61eb4a1f9818f81429d1c9aa026e0e5b, type: 3}
+  price: 200
+  isSellable: 1
   hpAmount: 0
   restoreMaxHP: 0
   ppAmount: 0

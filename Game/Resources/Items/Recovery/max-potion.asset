@@ -16,6 +16,8 @@ MonoBehaviour:
   description: Restores HP to full.
   category: healing
   icon: {fileID: 21300000, guid: b84185b1f5c220a4f9c188986990f7a5, type: 3}
+  price: 2500
+  isSellable: 1
   hpAmount: 0
   restoreMaxHP: 1
   ppAmount: 0

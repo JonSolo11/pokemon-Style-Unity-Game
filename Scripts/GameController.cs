@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum GameState { FreeRoam, Battle, Dialog, Menu, PartyScreen, Bag, Cutscene, Paused }
+public enum GameState { FreeRoam, Battle, Dialog, Menu, PartyScreen, Bag, Cutscene, Paused, Evolution, Shop }
 
 public class GameController : MonoBehaviour
 {   
@@ -15,6 +15,7 @@ public class GameController : MonoBehaviour
 
     public GameState state;
     GameState prevState;
+    GameState stateBeforeEvolution;
 
     public SceneDetails CurrentScene {get; private set;}
     public SceneDetails PrevScene {get; private set;}
@@ -42,6 +43,9 @@ public class GameController : MonoBehaviour
         StartCoroutine(PokemonDB.Init(pokemonFetcher));
         StartCoroutine(itemFetcher.Init());
         ConditionsDB.Init();
+        ItemDB.Init();
+        QuestDB.Init();
+        EvolutionsDB.Init();
     }
 
     private void Start()
@@ -52,13 +56,14 @@ public class GameController : MonoBehaviour
 
         DialogManager.Instance.OnShowDialog += () =>
         {
+            prevState = state;
             state = GameState.Dialog;
         };
 
-        DialogManager.Instance.OnCloseDialog += () =>
+        DialogManager.Instance.OnDialogFinished += () =>
         {
             if(state == GameState.Dialog)
-                state = GameState.FreeRoam;
+                state = prevState;
         };
 
         menuController.onBack += () => 
@@ -67,6 +72,19 @@ public class GameController : MonoBehaviour
         };
         menuController.onMenuSelected +=  OnMenuSelected;
 
+        EvolutionManager.i.OnStartEvolution += () => 
+        {
+            stateBeforeEvolution = state;
+            state = GameState.Evolution;
+        };
+        EvolutionManager.i.OnCompleteEvolution += () => 
+        {
+            partyScreen.SetPartyData();
+            state = stateBeforeEvolution;
+        };
+
+        ShopController.i.OnStart += () => state = GameState.Shop;
+        ShopController.i.OnFinish += () => state = GameState.FreeRoam;
     }
 
     public void PauseGame(bool pause)
@@ -125,10 +143,15 @@ public class GameController : MonoBehaviour
             trainer.BattleLost();
             trainer = null;
         }
+
+        partyScreen.SetPartyData();
         
         state = GameState.FreeRoam;
         battleSystem.gameObject.SetActive(false);
         worldCamera.gameObject.SetActive(true);
+
+        var playerParty = playerController.GetComponent<PokemonParty>();
+        StartCoroutine(playerParty.CheckForEvolutions());
     }
 
     private void Update()
@@ -177,6 +200,11 @@ public class GameController : MonoBehaviour
             };
 
             inventoryUI.HandleUpdate(onBack);
+        }
+
+        else if (state == GameState.Shop)
+        {
+            ShopController.i.HandleUpdate();
         }
     }
 

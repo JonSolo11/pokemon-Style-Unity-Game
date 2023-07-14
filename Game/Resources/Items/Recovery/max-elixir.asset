@@ -16,6 +16,8 @@ MonoBehaviour:
   description: Restores PP to full for each move.
   category: pp-recovery
   icon: {fileID: 21300000, guid: 9bf1bf2f5908b504f87fa0346504040f, type: 3}
+  price: 4500
+  isSellable: 1
   hpAmount: 0
   restoreMaxHP: 0
   ppAmount: 0

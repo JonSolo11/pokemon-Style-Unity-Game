@@ -27,11 +27,15 @@ public class LocationPortal : MonoBehaviour,IPlayerTriggerable
     }
     IEnumerator Teleport()
     {
+        Debug.Log("Fader: " + fader);
+        Debug.Log("Player: " + player);
+        Debug.Log("DestinationPortal: " + destinationPortal);
         GameController.Instance.PauseGame(true);
         yield return fader.FadeIn(0.5f);
 
         var destPortal = FindObjectsOfType<LocationPortal>().First(x => x != this && x.destinationPortal == this.destinationPortal);
         player.Character.SetPositionAndSnapToTile(destPortal.SpawnPoint.position);
+        
 
         yield return fader.FadeOut(0.5f);
         GameController.Instance.PauseGame(false);
@@ -39,4 +43,6 @@ public class LocationPortal : MonoBehaviour,IPlayerTriggerable
     }
 
     public Transform SpawnPoint => spawnPoint;
+
+    public bool triggerRepeatedly => false;
 }

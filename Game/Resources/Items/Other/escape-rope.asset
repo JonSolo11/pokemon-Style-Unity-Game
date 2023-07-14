@@ -16,3 +16,5 @@ MonoBehaviour:
   description: 
   category: 
   icon: {fileID: 21300000, guid: acdb9015792fac64d8c663637f5b1f96, type: 3}
+  price: 0
+  isSellable: 1

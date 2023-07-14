@@ -16,4 +16,6 @@ MonoBehaviour:
   description: "Tries to catch a wild Pok\xE9mon.  Success rate is 1.5\xD7."
   category: standard-balls
   icon: {fileID: 21300000, guid: 2ba6204afe9013146ae8432263f681fd, type: 3}
+  price: 600
+  isSellable: 1
   catchRateModifier: 1.5

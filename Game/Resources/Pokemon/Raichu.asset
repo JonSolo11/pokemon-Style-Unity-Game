@@ -37,6 +37,8 @@ MonoBehaviour:
     level: 1
   - moveBase: {fileID: 11400000, guid: 6d0467ca2e742f74095458ea3a4be682, type: 2}
     level: 1
+  - moveBase: {fileID: 11400000, guid: 91deaa2a801bf5d43b7d17720e2e6dea, type: 2}
+    level: 1
   - moveBase: {fileID: 11400000, guid: 1b9c735f59d4d1947a74d01e807244e0, type: 2}
     level: 1
   - moveBase: {fileID: 11400000, guid: d681c84c7bcb6b1418d94c90aa19c68d, type: 2}
@@ -65,3 +67,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: af4f0c42a8fadc14caa0f14762e4973a, type: 2}
   - {fileID: 11400000, guid: ee52c0ab8bb4f9a499be4c8289c38e33, type: 2}
   - {fileID: 11400000, guid: bb23af5c279140d4f92a8620ffb196d5, type: 2}
+  Evolutions: []

@@ -23,6 +23,17 @@ public class PokemonDB
             }
             
             yield return pokemonFetcher.Init();
+
+            foreach(var pokemon in pokemonArray)
+            {
+                if(pokemons.ContainsKey(pokemon.Name))
+                {
+                    continue;
+                }
+
+                pokemons[pokemon.Name] = pokemon;
+            }
+            
     }
 
     public static PokemonBase GetPokemonByName(string name)

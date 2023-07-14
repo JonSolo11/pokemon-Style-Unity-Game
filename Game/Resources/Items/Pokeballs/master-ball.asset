@@ -16,4 +16,6 @@ MonoBehaviour:
   description: "Catches a wild Pok\xE9mon every time."
   category: standard-balls
   icon: {fileID: 21300000, guid: fec3973c3749aba49b62bbe872ea4ecc, type: 3}
+  price: 0
+  isSellable: 1
   catchRateModifier: 255

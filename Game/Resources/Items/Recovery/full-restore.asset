@@ -16,6 +16,8 @@ MonoBehaviour:
   description: Restores HP to full and cures any status ailment and confusion.
   category: healing
   icon: {fileID: 21300000, guid: e4901fcc192b6154d8d8c62535103800, type: 3}
+  price: 3000
+  isSellable: 1
   hpAmount: 0
   restoreMaxHP: 1
   ppAmount: 0

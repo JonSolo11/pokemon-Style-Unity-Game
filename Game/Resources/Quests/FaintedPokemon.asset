@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0bcf6a805ac5454b9c57cc55f04c672, type: 3}
+  m_Name: FaintedPokemon
+  m_EditorClassIdentifier: 
+  name: FaintedPokemon
+  description: Revive NPC fainted Poke
+  startDialog:
+    lines:
+    - Hey there, Trainer! My pokemon fainted and I'm out of Revives...
+    - Could you spare one? I'd owe you big time!
+  inProgressDialog:
+    lines:
+    - in Progress test
+  completedDialog:
+    lines:
+    - Thank You! Here have this HM as a reward!
+  requiredItem: {fileID: 11400000, guid: 10cac00069a2e4b43b711fcad055b01e, type: 2}
+  rewardItem: {fileID: 11400000, guid: fbbfbdbd026bf8d4dbf2388a8058ca6a, type: 2}

@@ -15,6 +15,9 @@ MonoBehaviour:
   name: Self Destruct
   description: Teaches Self Destruct to a Pokemon
   category: all-machines
-  icon: {fileID: 1116001707, guid: d0d6f210bf6e2b44a82cbc8b27a4511f, type: 3}
+  icon: {fileID: -831799496, guid: d0d6f210bf6e2b44a82cbc8b27a4511f, type: 3}
+  price: 500
+  isSellable: 1
   move: {fileID: 11400000, guid: 6e2d0cf7cabb7214a973aa032d1e66e5, type: 2}
+  itemName: TM33
   isHM: 0

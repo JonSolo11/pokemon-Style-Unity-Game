@@ -16,6 +16,8 @@ MonoBehaviour:
   description: Cures a burn.
   category: status-cures
   icon: {fileID: 21300000, guid: 9841bdd0bdf33134782fd1a81d5beeaf, type: 3}
+  price: 200
+  isSellable: 1
   hpAmount: 0
   restoreMaxHP: 0
   ppAmount: 0
